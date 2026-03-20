@@ -1,0 +1,24 @@
+<svg
+  width="32"
+  height="32"
+  viewBox="0 0 24 18"
+  preserveAspectRatio="xMidYMid meet"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <!--
+    Forme identique au Logo.tsx :
+    M géométrique, vallée à (12, 9.5), accent orange centré sur la vallée.
+    Stroke légèrement épaissi (2.2 vs 2) pour la lisibilité en très petite taille.
+    Orange rect agrandi (5×5 vs 4×4) pour rester visible à 16px.
+    Fond transparent — fonctionne sur fond clair et sombre.
+  -->
+  <path
+    d="M1.5 16.5V2.5L12 9.5L22.5 2.5V16.5"
+    stroke="#0F0F0E"
+    stroke-width="2.2"
+    stroke-linecap="square"
+    stroke-linejoin="miter"
+  />
+  <rect x="9.5" y="7" width="5" height="5" fill="#E84400" />
+</svg>
