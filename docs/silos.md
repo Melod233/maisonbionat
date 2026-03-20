@@ -127,9 +127,9 @@ Traiter les gestes du quotidien et les produits utilisés dans la maison.
 - les pages organisées par pièce comme structure principale
 - la rénovation lourde
 
-## SILO 5 - Maison pièce par pièce
+## SILO 5 - Pièce par pièce
 ### URL
-/maison-piece-par-piece/
+/piece-par-piece/
 
 ### Rôle
 Organiser le sujet selon les zones concrètes du logement.
@@ -144,11 +144,11 @@ Organiser le sujet selon les zones concrètes du logement.
 - extérieur
 
 ### Exemples de futures pages enfants
-- /maison-piece-par-piece/chambre-saine/
-- /maison-piece-par-piece/chambre-bebe-plus-saine/
-- /maison-piece-par-piece/cuisine-plus-saine/
-- /maison-piece-par-piece/salle-de-bain-plus-saine/
-- /maison-piece-par-piece/garage-plus-sain/
+- /piece-par-piece/chambre-saine/
+- /piece-par-piece/chambre-bebe-plus-saine/
+- /piece-par-piece/cuisine-plus-saine/
+- /piece-par-piece/salle-de-bain-plus-saine/
+- /piece-par-piece/garage-plus-sain/
 
 ### Ce que ce silo ne doit pas absorber
 - tout le sujet des matériaux

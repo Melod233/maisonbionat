@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node:*)",
+      "Bash(cd:*)",
+      "Read(//c/Users/Phil/Desktop/**)",
+      "Bash(npx create-next-app@latest mb-init --typescript --tailwind --eslint --app --src-dir=false --import-alias=\"@/*\" --no-turbopack --yes)",
+      "Bash(netstat:*)",
+      "Bash(npx skills:*)",
+      "WebSearch",
+      "Bash(npx tsc:*)",
+      "Bash(taskkill /F /IM node.exe)",
+      "Bash(npx next:*)",
+      "Bash(for silo:*)",
+      "Bash(do echo:*)",
+      "Bash(npm run:*)",
+      "Bash(ls:*)",
+      "Bash(done)",
+      "Bash(python:*)",
+      "Bash(find C:/Users/Phil/Desktop/maisonbionat/app C:/Users/Phil/Desktop/maisonbionat/components C:/Users/Phil/Desktop/maisonbionat/data -type f \\\\\\(-name *.tsx -o -name *.ts \\\\\\))",
+      "Bash(grep -r href.*/ C:/Users/Phil/Desktop/maisonbionat/app C:/Users/Phil/Desktop/maisonbionat/components C:/Users/Phil/Desktop/maisonbionat/data --include=*.tsx --include=*.ts)",
+      "Bash(grep -r href= C:/Users/Phil/Desktop/maisonbionat/app C:/Users/Phil/Desktop/maisonbionat/components C:/Users/Phil/Desktop/maisonbionat/data --include=*.tsx --include=*.ts)"
+    ]
+  }
+}

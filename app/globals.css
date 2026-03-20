@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@theme {
+  /* ─── Typographie ─────────────────────────────────── */
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+
+  /* ─── Palette ─────────────────────────────────────── */
+  --color-dark:       #0F0F0E;
+  --color-dark-2:     #191918;
+  --color-light:      #F5F4F0;
+
+  --color-accent:     #E84400;
+  --color-accent-dim: #C93A00;
+
+  /* Texte sur fond clair */
+  --color-ink:        #0F0F0E;
+  --color-ink-muted:  #5E5D5A;
+
+  /* Texte sur fond sombre */
+  --color-ink-inv:    #F0EFE9;
+  --color-ink-dim:    #9B9A97;
+
+  /* Bordures */
+  --color-line:       #E2E0DA;
+  --color-line-inv:   #272725;
+}
+
+/* ─── Base ────────────────────────────────────────────── */
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
+body {
+  background-color: var(--color-light);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+::selection {
+  background-color: var(--color-accent);
+  color: #fff;
+}
+
+/* ─── Focus clavier ───────────────────────────────────── */
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+}
+
+/* ─── Utilitaire container ────────────────────────────── */
+.site-container {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  .site-container {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}

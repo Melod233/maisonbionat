@@ -57,7 +57,7 @@ Les URLs doivent être :
 - /air-interieur/
 - /air-interieur/comment-ameliorer-lair-dans-la-maison/
 - /materiaux-sains/
-- /maison-piece-par-piece/chambre-saine/
+- /piece-par-piece/chambre-saine/
 
 ## Canonicalisation
 Chaque page indexable doit avoir une URL canonique cohérente.

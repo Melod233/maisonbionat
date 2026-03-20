@@ -49,7 +49,7 @@ Silos principaux envisagés :
 - /materiaux-sains/
 - /humidite-maison/
 - /produits-et-habitudes/
-- /maison-piece-par-piece/
+- /piece-par-piece/
 - /renovation-saine/
 - /maison-saine-famille/
 
