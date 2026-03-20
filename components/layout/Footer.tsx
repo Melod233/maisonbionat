@@ -11,6 +11,9 @@ const siloLinks = [
   { label: "Maison saine famille",  href: "/maison-saine-famille/" },
 ];
 
+// Pages à venir — affichées en texte non cliquable jusqu'à leur création
+const pendingLabels = ["À propos", "Contact", "Mentions légales"];
+
 
 function FooterLink({ href, children }: { href: string; children: React.ReactNode }) {
   return (
@@ -97,10 +100,12 @@ export default function Footer() {
         </div>
 
         {/* ── Navigation ─────────────────────────────────── */}
-        <div className="py-12 lg:py-14 border-b border-line-inv">
-          <nav aria-label="Navigation thématique">
+        <div className="py-12 lg:py-14 grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-16 border-b border-line-inv">
+
+          {/* Thèmes */}
+          <nav className="md:col-span-2" aria-label="Navigation thématique">
             <NavLabel>Thèmes</NavLabel>
-            <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-x-8">
+            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-8">
               {siloLinks.map((link) => (
                 <li key={link.href}>
                   <FooterLink href={link.href}>{link.label}</FooterLink>
@@ -108,6 +113,21 @@ export default function Footer() {
               ))}
             </ul>
           </nav>
+
+          {/* Le site — texte non cliquable jusqu'à la création des pages */}
+          <div>
+            <NavLabel>Le site</NavLabel>
+            <ul>
+              {pendingLabels.map((label) => (
+                <li key={label}>
+                  <span className="block py-2.5 lg:py-1.5 text-[13px] text-ink-dim leading-snug opacity-40">
+                    {label}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
         </div>
 
         {/* ── Barre de bas ────────────────────────────────── */}
