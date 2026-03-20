@@ -11,11 +11,6 @@ const siloLinks = [
   { label: "Maison saine famille",  href: "/maison-saine-famille/" },
 ];
 
-const secondaryLinks = [
-  { label: "À propos",         href: "/a-propos/" },
-  { label: "Contact",          href: "/contact/" },
-  { label: "Mentions légales", href: "/mentions-legales/" },
-];
 
 function FooterLink({ href, children }: { href: string; children: React.ReactNode }) {
   return (
@@ -102,12 +97,10 @@ export default function Footer() {
         </div>
 
         {/* ── Navigation ─────────────────────────────────── */}
-        <div className="py-12 lg:py-14 grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-16 border-b border-line-inv">
-
-          {/* Thèmes — 2 colonnes internes sur sm+ */}
-          <nav className="md:col-span-2" aria-label="Navigation thématique">
+        <div className="py-12 lg:py-14 border-b border-line-inv">
+          <nav aria-label="Navigation thématique">
             <NavLabel>Thèmes</NavLabel>
-            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-8">
+            <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-x-8">
               {siloLinks.map((link) => (
                 <li key={link.href}>
                   <FooterLink href={link.href}>{link.label}</FooterLink>
@@ -115,19 +108,6 @@ export default function Footer() {
               ))}
             </ul>
           </nav>
-
-          {/* Le site */}
-          <nav aria-label="Navigation secondaire">
-            <NavLabel>Le site</NavLabel>
-            <ul>
-              {secondaryLinks.map((link) => (
-                <li key={link.href}>
-                  <FooterLink href={link.href}>{link.label}</FooterLink>
-                </li>
-              ))}
-            </ul>
-          </nav>
-
         </div>
 
         {/* ── Barre de bas ────────────────────────────────── */}

@@ -298,7 +298,7 @@ export default function AirInterieurPolluePage() {
             title: "Matériaux à faibles émissions",
             description:
               "Les matériaux sont la source principale de COV. Comprendre l'étiquetage A+ et faire de meilleurs choix à chaque achat ou rénovation.",
-            href: "/materiaux-sains/materiaux-a-faibles-emissions/",
+            href: "/materiaux-sains/materiaux-faibles-emissions/",
           },
           {
             tag: "Produits et habitudes",

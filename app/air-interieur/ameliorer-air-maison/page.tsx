@@ -299,14 +299,14 @@ export default function AmeliorerAirMaisonPage() {
             title: "Les polluants les plus fréquents",
             description:
               "Comprendre quels polluants sont présents chez vous et d'où ils proviennent pour agir sur les bonnes sources.",
-            href: "/air-interieur/polluants-interieurs-les-plus-frequents/",
+            href: "/air-interieur/polluants-interieurs-frequents/",
           },
           {
             tag: "Air intérieur",
             title: "Aération ou ventilation : quelle différence ?",
             description:
               "Deux mécanismes complémentaires que l'on confond souvent. Comprendre leurs rôles respectifs pour combiner les deux efficacement.",
-            href: "/air-interieur/aeration-ou-ventilation-differences/",
+            href: "/air-interieur/aeration-ou-ventilation/",
           },
           {
             tag: "Humidité maison",
