@@ -60,6 +60,20 @@ type BreadcrumbItem = {
 };
 
 /**
+ * Résout un href en URL absolue de manière robuste.
+ *
+ * - Si href est déjà une URL absolue  → retourné tel quel (pas de double-préfixe)
+ * - Si href est un chemin relatif     → new URL() construit l'URL correctement
+ *
+ * Évite la concaténation naïve `${BASE_URL}${href}` qui produisait
+ * "https://www.maisonbionat.frhttps://www.maisonbionat.fr/..." quand
+ * href était déjà absolu.
+ */
+function resolveUrl(href: string): string {
+  return new URL(href, BASE_URL).toString();
+}
+
+/**
  * Données structurées BreadcrumbList.
  * Pour les pages piliers et enfants.
  */
@@ -71,7 +85,7 @@ export function getBreadcrumbJsonLd(items: BreadcrumbItem[]) {
       "@type": "ListItem",
       position: index + 1,
       name: item.name,
-      item: `${BASE_URL}${item.href}`,
+      item: resolveUrl(item.href),
     })),
   };
 }
