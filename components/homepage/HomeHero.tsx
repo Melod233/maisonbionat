@@ -4,21 +4,22 @@ import Link from "next/link";
 import { useEffect, useRef } from "react";
 
 /* ── Constants ────────────────────────────────────────────── */
-const COLS = 60;
+const COLS = 80;
 const ROWS = 40;
-const CHARS = "abcdefghijklmnopqrstuvwxyz0123456789ABCDEF/\\|+=-.,:";
+// Jeu de caractères allégé — signes fins, peu de masse visuelle
+const CHARS = "abcdefghijklmnopqrstuvwxyz.,:-|/\\+';`";
 
-// Palette RGB — mode 3 est plus lumineux pour les contours accentués
+// Palette RGB
 const RGB_ORANGE:        [number, number, number] = [240, 80,  10 ];
 const RGB_WHITE:         [number, number, number] = [248, 243, 235];
-const RGB_DARK:          [number, number, number] = [26,  5,   0  ];
+const RGB_DARK:          [number, number, number] = [6,   1,   0  ];
 const RGB_BRIGHT_ORANGE: [number, number, number] = [255, 90,  0  ];
 
 const COLOR_PAIRS: [[number,number,number],[number,number,number]][] = [
   [RGB_DARK,          RGB_ORANGE ], // 0 : sombre → orange
   [RGB_ORANGE,        RGB_WHITE  ], // 1 : orange → blanc chaud
   [RGB_DARK,          RGB_WHITE  ], // 2 : sombre → blanc chaud
-  [RGB_BRIGHT_ORANGE, RGB_WHITE  ], // 3 : highlight — orange vif → blanc
+  [RGB_BRIGHT_ORANGE, RGB_WHITE  ], // 3 : accent — orange vif → blanc
 ];
 
 /* ── Hash ─────────────────────────────────────────────────── */
@@ -29,55 +30,51 @@ function hash(c: number, r: number, s = 0): number {
   return ((n ^ (n >>> 16)) >>> 0) / 0xffffffff;
 }
 
+/* ── Géométrie du M ───────────────────────────────────────── */
+// Rapport largeur/hauteur d'une cellule monospace (approx)
+const CA = 0.52;
+
+// Points clés — M large pleine largeur, légèrement asymétrique pour éviter la rigidité
+// Jambe gauche  : colonne 4,  de r=3 à r=38
+// Jambe droite  : colonne 76, de r=4 à r=38 (décalée d'une ligne, brisure subtile)
+// Vallée centrale : c=40, r=22 (utilisée pour la géométrie diagonale uniquement)
+const LT_C = 4,  LT_R = 3;   // sommet jambe gauche
+const LB_C = 4,  LB_R = 38;  // base jambe gauche
+const V_C  = 40, V_R  = 22;  // vallée centrale
+const RT_C = 76, RT_R = 4;   // sommet jambe droite — asymétrie intentionnelle
+const RB_C = 76, RB_R = 38;  // base jambe droite
+
+const STROKE_HW = 1.5;  // demi-épaisseur affinée — silhouette plus légère
+const EDGE_T    = 0.82; // zone bord élargie — forme plus "tracée" que "remplie"
+
+// Distance d'un point (pc,pr) à un segment (ac,ar)→(bc,br) — espace écran
+function segDist(
+  pc: number, pr: number,
+  ac: number, ar: number,
+  bc: number, br: number,
+): number {
+  const dx = (bc - ac) * CA, dy = br - ar;
+  const pdx = (pc - ac) * CA, pdy = pr - ar;
+  const len2 = dx * dx + dy * dy;
+  if (len2 === 0) return Math.hypot(pdx, pdy);
+  const t = Math.max(0, Math.min(1, (pdx * dx + pdy * dy) / len2));
+  return Math.hypot(pdx - t * dx, pdy - t * dy);
+}
+
 /* ── Zones ────────────────────────────────────────────────── */
-// chimney-edge / window-edge / door-edge = contours accentués
-type Zone =
-  | "out"
-  | "chimney-edge" | "chimney-fill"
-  | "edge"         | "fill"
-  | "window-edge"  | "window-void"
-  | "door-edge"    | "door-void";
+type Zone = "out" | "edge" | "fill";
 
 function getZone(c: number, r: number): Zone {
-  const x = c / (COLS - 1);
-  const y = r / (ROWS - 1);
+  // Distance minimale aux quatre segments du M
+  const d = Math.min(
+    segDist(c, r, LT_C, LT_R, LB_C, LB_R), // jambe gauche
+    segDist(c, r, LT_C, LT_R, V_C,  V_R ),  // diagonale gauche
+    segDist(c, r, V_C,  V_R,  RT_C, RT_R),  // diagonale droite
+    segDist(c, r, RT_C, RT_R, RB_C, RB_R),  // jambe droite
+  );
 
-  // Cheminée
-  if (x >= 0.57 && x <= 0.66 && y >= 0.03 && y <= 0.30) {
-    return x <= 0.59 || x >= 0.64 || y <= 0.05 ? "chimney-edge" : "chimney-fill";
-  }
-
-  // Toit (triangle)
-  if (y >= 0.09 && y <= 0.38) {
-    const t  = (y - 0.09) / 0.29;
-    const lx = 0.5 - t * 0.44;
-    const rx = 0.5 + t * 0.44;
-    if (x >= lx && x <= rx) {
-      return x - lx < 0.022 || rx - x < 0.022 || y - 0.09 < 0.022 ? "edge" : "fill";
-    }
-  }
-
-  // Corps
-  if (x >= 0.06 && x <= 0.94 && y >= 0.38 && y <= 0.97) {
-    // Fenêtre gauche
-    if (x >= 0.10 && x <= 0.32 && y >= 0.48 && y <= 0.67) {
-      if (Math.abs(y - 0.575) < 0.016 || Math.abs(x - 0.21) < 0.012) return "window-edge";
-      return x <= 0.12 || x >= 0.30 || y <= 0.50 || y >= 0.65 ? "window-edge" : "window-void";
-    }
-    // Fenêtre droite
-    if (x >= 0.68 && x <= 0.90 && y >= 0.48 && y <= 0.67) {
-      if (Math.abs(y - 0.575) < 0.016 || Math.abs(x - 0.79) < 0.012) return "window-edge";
-      return x <= 0.70 || x >= 0.88 || y <= 0.50 || y >= 0.65 ? "window-edge" : "window-void";
-    }
-    // Porte
-    if (x >= 0.42 && x <= 0.58 && y >= 0.71 && y <= 0.97) {
-      if (Math.abs(x - 0.545) < 0.010 && Math.abs(y - 0.845) < 0.012) return "door-edge";
-      return x <= 0.44 || x >= 0.56 || y <= 0.73 ? "door-edge" : "door-void";
-    }
-    return x <= 0.08 || x >= 0.92 || y >= 0.95 ? "edge" : "fill";
-  }
-
-  return "out";
+  if (d >= STROKE_HW) return "out";
+  return d < STROKE_HW - EDGE_T ? "fill" : "edge";
 }
 
 /* ── Paramètres d'animation par cellule ───────────────────── */
@@ -111,49 +108,25 @@ for (let r = 0; r < ROWS; r++) {
     let baseOp: number, opAmp: number, charInterval: number;
     let colorMode: 0 | 1 | 2 | 3;
 
-    if (z === "chimney-edge" || z === "window-edge" || z === "door-edge") {
-      // Contours accentués — très lumineux, stables
-      baseOp       = 0.88 + h[1] * 0.12;
-      opAmp        = 0.02 + h[2] * 0.06;
-      charInterval = h[3] < 0.78 ? 0 : 8 + h[3] * 12;
-      colorMode    = 3;
-    } else if (z === "chimney-fill") {
-      if (h[0] < 0.22) continue;
-      baseOp       = 0.22 + h[1] * 0.35;
-      opAmp        = 0.04 + h[2] * 0.20;
-      charInterval = h[3] < 0.35 ? 0 : 1.5 + h[3] * 5;
-      colorMode    = (h[8] < 0.50 ? 0 : 1) as 0 | 1;
-    } else if (z === "edge") {
-      baseOp       = 0.72 + h[1] * 0.28;
-      opAmp        = 0.04 + h[2] * 0.14;
-      charInterval = h[3] < 0.65 ? 0 : 5 + h[3] * 12;
+    if (z === "edge") {
+      // Contour — variation atmosphérique large, quelques cellules absentes pour respiration
+      if (h[0] < 0.09) continue;
+      baseOp       = 0.38 + h[1] * 0.52;
+      opAmp        = 0.10 + h[2] * 0.22;  // pulsation bien plus marquée
+      charInterval = h[3] < 0.35 ? 0 : 0.3 + h[3] * 1.6; // changement rapide : 0.3–2.0 s
       colorMode    = (h[8] < 0.45 ? 0 : h[8] < 0.78 ? 1 : 2) as 0 | 1 | 2;
-    } else if (z === "fill") {
-      if (h[0] < 0.28) continue;
-      baseOp       = 0.14 + h[1] * 0.28;
-      opAmp        = 0.05 + h[2] * 0.24;
-      charInterval = h[3] < 0.38 ? 0 : 1.5 + h[3] * 5.5;
-      colorMode    = (h[8] < 0.45 ? 0 : h[8] < 0.78 ? 1 : 2) as 0 | 1 | 2;
-    } else if (z === "window-void") {
-      // Vitres — reflet lumineux, légèrement visible
-      if (h[0] < 0.62) continue;
-      baseOp       = 0.09 + h[1] * 0.14;
-      opAmp        = 0.02 + h[2] * 0.06;
-      charInterval = 0;
-      colorMode    = 3;
     } else {
-      // door-void
-      if (h[0] < 0.90) continue;
-      baseOp       = 0.04 + h[1] * 0.07;
-      opAmp        = 0.01 + h[2] * 0.03;
-      charInterval = 0;
-      colorMode    = (h[8] < 0.45 ? 0 : h[8] < 0.78 ? 1 : 2) as 0 | 1 | 2;
+      // fill — fondu dans le noir, juste quelques traces
+      if (h[0] < 0.86) continue;
+      baseOp       = 0.03 + h[1] * 0.07;
+      opAmp        = 0.02 + h[2] * 0.05;
+      charInterval = h[3] < 0.25 ? 0 : 0.2 + h[3] * 1.0; // très rapide : 0.2–1.2 s
+      colorMode    = (h[8] < 0.65 ? 0 : 1) as 0 | 1;
     }
 
     const wave    = (c / COLS) * Math.PI * 2.3 + (r / ROWS) * Math.PI * 1.7;
-    const opSpeed = h[5] < 0.72
-      ? 0.15 + h[5] * 1.04
-      : 2.0  + (h[5] - 0.72) * 10.7;
+    // Vitesses d'oscillation — bien plus vives
+    const opSpeed = 1.2 + h[5] * 4.0;  // 1.2–5.2 rad/s : animation franche
 
     CELL_ANIMS[fi] = {
       initChar:     CHARS[charIdx],
@@ -163,7 +136,7 @@ for (let r = 0; r < ROWS; r++) {
       opSpeed,
       opAmp,
       colorPhase:   wave * 0.6 + h[6] * Math.PI * 2,
-      colorSpeed:   0.06 + h[7] * 0.5,
+      colorSpeed:   0.7 + h[7] * 2.5,  // transitions chromatiques rapides : 0.7–3.2 rad/s
       colorMode,
       charInterval,
       charPhase:    h[9] * 60,
@@ -173,9 +146,9 @@ for (let r = 0; r < ROWS; r++) {
 }
 
 /* ── Constantes build animation ───────────────────────────── */
-const BUILD_DURATION = 1.5;  // secondes pour toutes les lignes
+const BUILD_DURATION = 1.2;  // secondes pour toutes les lignes
 const BUILD_DELAY    = 0.05; // délai avant départ
-const FLASH_DUR      = 0.32; // durée du flash par ligne
+const FADEIN_DUR     = 0.45; // durée du fondu d'apparition par ligne
 
 /* ── Quick links ─────────────────────────────────────────── */
 const QUICK_LINKS = [
@@ -249,12 +222,13 @@ export default function HomeHero() {
         const opOsc    = Math.sin(t * cell.opSpeed + cell.opPhase);
         const normalOp = Math.max(0.02, Math.min(1, cell.baseOp + opOsc * cell.opAmp));
 
-        // ── Flash au moment du reveal ────────────────────────
-        const flashT = bElapsed - revealAt;
+        // ── Fondu d'apparition au moment du reveal ───────────
+        const fadeT = bElapsed - revealAt;
         let op: number;
-        if (flashT < FLASH_DUR) {
-          const flashCurve = Math.sin((flashT / FLASH_DUR) * Math.PI);
-          op = Math.min(1, Math.max(normalOp, flashCurve * 1.4));
+        if (fadeT < FADEIN_DUR) {
+          const p = fadeT / FADEIN_DUR;
+          const smooth = p * p * (3 - 2 * p); // smoothstep
+          op = normalOp * smooth;
         } else {
           op = normalOp;
         }
@@ -292,7 +266,7 @@ export default function HomeHero() {
   return (
     <section className="bg-dark relative overflow-hidden pt-14 lg:pt-20 pb-12 lg:pb-24">
       <div className="site-container relative z-10">
-        <div className="flex flex-col lg:flex-row lg:items-center gap-10 lg:gap-6">
+        <div className="flex flex-col lg:flex-row lg:items-center gap-10 lg:gap-20">
 
           {/* ── Contenu ── */}
           <div className="lg:w-1/2 max-w-[560px]">
@@ -356,8 +330,8 @@ export default function HomeHero() {
               style={{
                 fontFamily: 'ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Courier New", monospace',
                 fontSize: "clamp(5.5px, 1.45vw, 11px)",
-                lineHeight: "1.18",
-                letterSpacing: "0.03em",
+                lineHeight: "1.22",
+                letterSpacing: "0.05em",
                 color: "#E84400",
               }}
             >
