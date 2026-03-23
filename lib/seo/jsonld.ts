@@ -54,6 +54,67 @@ export function getFaqPageJsonLd(items: FaqItem[]) {
   };
 }
 
+// ──────────────────────────────────────────────────────────
+// Données structurées pour les pages d'avis éditoriaux
+// ──────────────────────────────────────────────────────────
+
+type BookReviewJsonLdProps = {
+  bookTitle: string;
+  /** Nom unique (affiché) ou tableau de noms pour les ouvrages collectifs */
+  author: string | string[];
+  publisher?: string;
+  isbn?: string;
+  globalRating: number;
+  reviewBody: string;
+  pageUrl: string;
+};
+
+/**
+ * Données structurées Review + Book imbriqué.
+ * Uniquement si la review est réellement visible dans la page.
+ */
+export function getBookReviewJsonLd({
+  bookTitle,
+  author,
+  publisher,
+  isbn,
+  globalRating,
+  reviewBody,
+  pageUrl,
+}: BookReviewJsonLdProps) {
+  const authorEntry = Array.isArray(author)
+    ? author.map((name) => ({ "@type": "Person" as const, name }))
+    : { "@type": "Person" as const, name: author };
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "Review",
+    url: resolveUrl(pageUrl),
+    inLanguage: "fr",
+    author: {
+      "@type": "Organization",
+      name: "Maisonbionat",
+      url: BASE_URL,
+    },
+    itemReviewed: {
+      "@type": "Book",
+      name: bookTitle,
+      author: authorEntry,
+      ...(publisher
+        ? { publisher: { "@type": "Organization", name: publisher } }
+        : {}),
+      ...(isbn ? { isbn } : {}),
+    },
+    reviewRating: {
+      "@type": "Rating",
+      ratingValue: globalRating.toFixed(1),
+      bestRating: "5",
+      worstRating: "1",
+    },
+    reviewBody,
+  };
+}
+
 type BreadcrumbItem = {
   name: string;
   href: string;
