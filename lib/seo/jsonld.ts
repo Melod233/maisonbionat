@@ -115,6 +115,58 @@ export function getBookReviewJsonLd({
   };
 }
 
+// ──────────────────────────────────────────────────────────
+// Données structurées pour les guides (WordPress headless)
+// ──────────────────────────────────────────────────────────
+
+type GuideJsonLdProps = {
+  title: string;
+  description: string;
+  slug: string;
+  datePublished: string;
+  dateModified: string;
+  image?: string | null;
+};
+
+/**
+ * Données structurées Article pour un guide.
+ */
+export function getGuideJsonLd({
+  title,
+  description,
+  slug,
+  datePublished,
+  dateModified,
+  image,
+}: GuideJsonLdProps) {
+  const url = resolveUrl(`/guides/${slug}/`);
+  return {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: title,
+    description,
+    url,
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": url,
+    },
+    inLanguage: "fr",
+    datePublished,
+    dateModified,
+    author: {
+      "@type": "Organization",
+      name: "Maisonbionat",
+      url: BASE_URL,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Maisonbionat",
+      url: BASE_URL,
+    },
+    ...(image ? { image } : {}),
+  };
+}
+
 type BreadcrumbItem = {
   name: string;
   href: string;

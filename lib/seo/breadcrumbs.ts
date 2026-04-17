@@ -44,3 +44,27 @@ export function getArticleBreadcrumbs(
     { name: articleName, href: articleHref },
   ];
 }
+
+/**
+ * Génère les breadcrumbs pour la page index /guides/.
+ */
+export function getGuideIndexBreadcrumbs(): BreadcrumbItem[] {
+  return [
+    { name: "Accueil", href: "/" },
+    { name: "Guides", href: "/guides/" },
+  ];
+}
+
+/**
+ * Génère les breadcrumbs pour une page guide /guides/[slug]/.
+ */
+export function getGuideBreadcrumbs(
+  guideTitle: string,
+  guideSlug: string
+): BreadcrumbItem[] {
+  return [
+    { name: "Accueil", href: "/" },
+    { name: "Guides", href: "/guides/" },
+    { name: guideTitle, href: `/guides/${guideSlug}/` },
+  ];
+}

@@ -4,6 +4,7 @@ import { homepageFaq } from "@/data/faq";
 
 import HomeHero from "@/components/homepage/HomeHero";
 import HomeStartSection from "@/components/homepage/HomeStartSection";
+import HomeLatestGuidesSection from "@/components/homepage/HomeLatestGuidesSection";
 import HomePillarsSection from "@/components/homepage/HomePillarsSection";
 import HomeRoomsSection from "@/components/homepage/HomeRoomsSection";
 import HomeProblemsSection from "@/components/homepage/HomeProblemsSection";
@@ -47,6 +48,7 @@ export default function HomePage() {
 
       <HomeHero />
       <HomeStartSection />
+      <HomeLatestGuidesSection />
       <HomePillarsSection />
       <HomeRoomsSection />
       <HomeProblemsSection />

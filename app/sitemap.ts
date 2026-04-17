@@ -1,10 +1,31 @@
 import type { MetadataRoute } from "next";
+import { getAllGuidesForSitemap } from "@/lib/wordpress";
 
 const BASE = "https://www.maisonbionat.fr";
 const SILOS_UPDATED = "2025-03-20";
 const PAGES_UPDATED = "2025-03-20";
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+  // Guides WordPress (récupérés dynamiquement)
+  let guideEntries: MetadataRoute.Sitemap = [];
+  let guidesIndexLastModified: string | Date = SILOS_UPDATED;
+  try {
+    const guides = await getAllGuidesForSitemap();
+    if (guides.length > 0) {
+      guidesIndexLastModified = guides[0].modified;
+    }
+    guideEntries = guides.map((g) => ({
+      url: `${BASE}/guides/${g.slug}/`,
+      lastModified: g.modified,
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    }));
+  } catch {
+    // En cas d'échec WP, on ne casse pas le sitemap : on renvoie
+    // au moins les pages statiques du site.
+    guideEntries = [];
+  }
+
   return [
     // ── Homepage ─────────────────────────────────────────────
     {
@@ -12,6 +33,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: SILOS_UPDATED,
       changeFrequency: "weekly",
       priority: 1,
+    },
+
+    // ── Index guides ─────────────────────────────────────────
+    {
+      url: `${BASE}/guides/`,
+      lastModified: guidesIndexLastModified,
+      changeFrequency: "weekly",
+      priority: 0.8,
     },
 
     // ── Silos ────────────────────────────────────────────────
@@ -395,5 +424,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.7,
     },
+
+    // ── Guides WordPress (dynamique) ─────────────────────────
+    ...guideEntries,
   ];
 }

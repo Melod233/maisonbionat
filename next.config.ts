@@ -7,6 +7,18 @@ const nextConfig: NextConfig = {
   images: {
     // Formats modernes pour la performance
     formats: ["image/avif", "image/webp"],
+    // Domaine WordPress pour les images distantes
+    remotePatterns: process.env.WORDPRESS_URL
+      ? [
+          {
+            protocol: new URL(process.env.WORDPRESS_URL).protocol.replace(
+              ":",
+              ""
+            ) as "https" | "http",
+            hostname: new URL(process.env.WORDPRESS_URL).hostname,
+          },
+        ]
+      : [],
   },
 
   // Headers de sécurité de base

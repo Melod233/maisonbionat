@@ -21,7 +21,9 @@
       "Bash(grep -r href.*/ C:/Users/Phil/Desktop/maisonbionat/app C:/Users/Phil/Desktop/maisonbionat/components C:/Users/Phil/Desktop/maisonbionat/data --include=*.tsx --include=*.ts)",
       "Bash(grep -r href= C:/Users/Phil/Desktop/maisonbionat/app C:/Users/Phil/Desktop/maisonbionat/components C:/Users/Phil/Desktop/maisonbionat/data --include=*.tsx --include=*.ts)",
       "Bash(xargs grep:*)",
-      "Bash(grep -r \"href.*href\\\\|url.*url\\\\|\\\\`.*\\\\`\" /c/Users/Phil/Desktop/maisonbionat/app --include=\"*.tsx\" --include=\"*.ts\")"
+      "Bash(grep -r \"href.*href\\\\|url.*url\\\\|\\\\`.*\\\\`\" /c/Users/Phil/Desktop/maisonbionat/app --include=\"*.tsx\" --include=\"*.ts\")",
+      "Bash(curl *)",
+      "Bash(npx eslint *)"
     ]
   }
 }
