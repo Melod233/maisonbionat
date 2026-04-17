@@ -23,7 +23,8 @@
       "Bash(xargs grep:*)",
       "Bash(grep -r \"href.*href\\\\|url.*url\\\\|\\\\`.*\\\\`\" /c/Users/Phil/Desktop/maisonbionat/app --include=\"*.tsx\" --include=\"*.ts\")",
       "Bash(curl *)",
-      "Bash(npx eslint *)"
+      "Bash(npx eslint *)",
+      "Bash(cat C:\\\\\\\\Users\\\\\\\\Phil\\\\\\\\Desktop\\\\\\\\maisonbionat\\\\\\\\package.json)"
     ]
   }
 }

@@ -1,9 +1,5 @@
 import type { Metadata } from "next";
-import {
-  getAllGuides,
-  getPlainExcerpt,
-  REVALIDATE,
-} from "@/lib/wordpress";
+import { getAllGuides, getPlainExcerpt } from "@/lib/wordpress";
 import { buildGuideIndexMetadata } from "@/lib/seo/metadata";
 import { getBreadcrumbJsonLd } from "@/lib/seo/jsonld";
 import { getGuideIndexBreadcrumbs } from "@/lib/seo/breadcrumbs";
@@ -12,7 +8,7 @@ import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import GuideCard from "@/components/guide/GuideCard";
 
 export const metadata: Metadata = buildGuideIndexMetadata();
-export const revalidate = REVALIDATE;
+export const revalidate = 300;
 
 export default async function GuidesPage() {
   const guides = await getAllGuides();

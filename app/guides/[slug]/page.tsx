@@ -7,7 +7,6 @@ import {
   getAllGuideSlugs,
   getAllGuides,
   getPlainExcerpt,
-  REVALIDATE,
 } from "@/lib/wordpress";
 import {
   buildGuideMetadata,
@@ -20,7 +19,7 @@ import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import GuideContent from "@/components/guide/GuideContent";
 import GuideCard from "@/components/guide/GuideCard";
 
-export const revalidate = REVALIDATE;
+export const revalidate = 300;
 
 type Props = {
   params: Promise<{ slug: string }>;
