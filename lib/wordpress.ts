@@ -81,17 +81,37 @@ function stripHtml(html: string): string {
  */
 export function decodeEntities(input: string): string {
   if (!input) return input;
+  // &amp; en premier pour gérer le double-encodage (ex: &amp;rsquo; → &rsquo; → ’)
   return input
+    .replace(/&amp;/g, "&")
     .replace(/&#(\d+);/g, (_, code) => String.fromCharCode(Number(code)))
     .replace(/&#x([0-9a-fA-F]+);/g, (_, code) =>
       String.fromCharCode(parseInt(code, 16))
     )
-    .replace(/&amp;/g, "&")
-    .replace(/&lt;/g, "<")
-    .replace(/&gt;/g, ">")
+    .replace(/&lsquo;/g, "‘")
+    .replace(/&rsquo;/g, "’")
+    .replace(/&ldquo;/g, "“")
+    .replace(/&rdquo;/g, "”")
+    .replace(/&sbquo;/g, "‚")
+    .replace(/&bdquo;/g, "„")
+    .replace(/&laquo;/g, "«")
+    .replace(/&raquo;/g, "»")
+    .replace(/&hellip;/g, "…")
+    .replace(/&mdash;/g, "—")
+    .replace(/&ndash;/g, "–")
+    .replace(/&middot;/g, "·")
+    .replace(/&bull;/g, "•")
+    .replace(/&copy;/g, "©")
+    .replace(/&reg;/g, "®")
+    .replace(/&trade;/g, "™")
+    .replace(/&euro;/g, "€")
+    .replace(/&deg;/g, "°")
+    .replace(/&times;/g, "×")
     .replace(/&quot;/g, '"')
     .replace(/&apos;/g, "'")
-    .replace(/&nbsp;/g, " ");
+    .replace(/&nbsp;/g, " ")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">");
 }
 
 function mapPost(raw: WPRawPost): WPPost {
@@ -110,7 +130,7 @@ function mapPost(raw: WPRawPost): WPPost {
     id: raw.id,
     slug: raw.slug,
     title: { rendered: decodeEntities(raw.title.rendered) },
-    excerpt: { rendered: raw.excerpt.rendered },
+    excerpt: { rendered: decodeEntities(raw.excerpt.rendered) },
     content: raw.content,
     date: raw.date,
     modified: raw.modified,
