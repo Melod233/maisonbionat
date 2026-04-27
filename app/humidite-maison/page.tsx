@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { getBreadcrumbJsonLd, getFaqPageJsonLd } from "@/lib/seo/jsonld";
+import { getBreadcrumbJsonLd } from "@/lib/seo/jsonld";
 import HeroPillar from "@/components/pillar/HeroPillar";
 import InsightGrid from "@/components/pillar/InsightGrid";
 import PriorityBlock from "@/components/pillar/PriorityBlock";
@@ -55,16 +55,11 @@ export default function HumiditeMaisonPage() {
         "Les remontées capillaires (humidité montant par les murs depuis les fondations) nécessitent un diagnostic professionnel. Les traitements superficiels sont insuffisants. Une injection de résine ou un drain en pied de mur peut être nécessaire selon le bâti.",
     },
   ];
-  const faqJsonLd = getFaqPageJsonLd(faqItems);
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       {/* ① Hero */}
       <HeroPillar
@@ -226,6 +221,12 @@ export default function HumiditeMaisonPage() {
             title: "Humidité dans la maison : causes, diagnostic et solutions",
             description: "Condensation sur les vitres, murs humides, air lourd : identifier la cause exacte de l'humidité dans votre logement et agir avec la bonne solution.",
             href: "/humidite-maison/problemes-humidite/",
+          },
+          {
+            number: "09",
+            title: "Salpêtre sur les murs : reconnaître, traiter et prévenir",
+            description: "Reconnaître le salpêtre, le distinguer de la moisissure et de l'efflorescence cimentaire, identifier les remontées capillaires et choisir un traitement durable.",
+            href: "/humidite-maison/salpetre-murs/",
           },
         ]}
       />

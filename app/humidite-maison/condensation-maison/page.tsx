@@ -304,10 +304,10 @@ export default function CondensationMaisonPage() {
           },
           {
             tag: "Humidité maison",
-            title: "Réduire l'humidité au quotidien",
+            title: "Salpêtre sur les murs : reconnaître, traiter et prévenir",
             description:
-              "Les gestes et habitudes pour limiter la production de vapeur et maintenir un taux d'hygrométrie sain sans équipements coûteux.",
-            href: "/humidite-maison/reduire-humidite-maison/",
+              "Quand la condensation chronique laisse apparaître des dépôts blanchâtres : reconnaître le salpêtre et identifier la cause d'humidité.",
+            href: "/humidite-maison/salpetre-murs/",
           },
         ]}
       />

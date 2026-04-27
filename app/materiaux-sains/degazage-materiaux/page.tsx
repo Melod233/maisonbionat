@@ -314,10 +314,10 @@ export default function DegazageMateriauxPage() {
           },
           {
             tag: "Air intérieur",
-            title: "Bien aérer sa maison : méthodes et fréquence",
+            title: "Le formaldéhyde dans la maison",
             description:
-              "L'aération est le levier principal pour gérer le dégazage. Comprendre comment et quand aérer efficacement.",
-            href: "/air-interieur/bien-aerer-maison/",
+              "Le polluant majeur émis par les matériaux qui dégazent : sources, valeurs guides ANSES et stratégie complète de réduction.",
+            href: "/air-interieur/formaldehyde-maison/",
           },
         ]}
       />

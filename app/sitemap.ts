@@ -87,7 +87,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.8,
     },
 
-    // ── Air intérieur (9) ────────────────────────────────────
+    // ── Air intérieur (12) ───────────────────────────────────
     {
       url: `${BASE}/air-interieur/aeration-ou-ventilation/`,
       lastModified: PAGES_UPDATED,
@@ -119,7 +119,19 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.7,
     },
     {
+      url: `${BASE}/air-interieur/formaldehyde-maison/`,
+      lastModified: PAGES_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
       url: `${BASE}/air-interieur/odeurs-persistantes-maison/`,
+      lastModified: PAGES_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: `${BASE}/air-interieur/plantes-depolluantes-maison/`,
       lastModified: PAGES_UPDATED,
       changeFrequency: "monthly",
       priority: 0.7,
@@ -137,13 +149,19 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.7,
     },
     {
+      url: `${BASE}/air-interieur/purificateur-air-maison/`,
+      lastModified: PAGES_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
       url: `${BASE}/air-interieur/sources-pollution-air/`,
       lastModified: PAGES_UPDATED,
       changeFrequency: "monthly",
       priority: 0.7,
     },
 
-    // ── Humidité maison (8) ──────────────────────────────────
+    // ── Humidité maison (9) ──────────────────────────────────
     {
       url: `${BASE}/humidite-maison/chambre-humide/`,
       lastModified: PAGES_UPDATED,
@@ -181,6 +199,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.7,
     },
     {
+      url: `${BASE}/humidite-maison/salpetre-murs/`,
+      lastModified: PAGES_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
       url: `${BASE}/humidite-maison/sources-humidite-interieure/`,
       lastModified: PAGES_UPDATED,
       changeFrequency: "monthly",
@@ -193,7 +217,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.7,
     },
 
-    // ── Matériaux sains (9) ──────────────────────────────────
+    // ── Matériaux sains (10) ─────────────────────────────────
     {
       url: `${BASE}/materiaux-sains/degazage-materiaux/`,
       lastModified: PAGES_UPDATED,
@@ -226,6 +250,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     },
     {
       url: `${BASE}/materiaux-sains/meubles-faibles-emissions/`,
+      lastModified: PAGES_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: `${BASE}/materiaux-sains/panneaux-bois-formaldehyde/`,
       lastModified: PAGES_UPDATED,
       changeFrequency: "monthly",
       priority: 0.7,

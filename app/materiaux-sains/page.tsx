@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { getBreadcrumbJsonLd, getFaqPageJsonLd } from "@/lib/seo/jsonld";
+import { getBreadcrumbJsonLd } from "@/lib/seo/jsonld";
 import HeroPillar from "@/components/pillar/HeroPillar";
 import InsightGrid from "@/components/pillar/InsightGrid";
 import PriorityBlock from "@/components/pillar/PriorityBlock";
@@ -55,16 +55,11 @@ export default function MateriauxSainsPage() {
         "Même avec une peinture A+, il est recommandé d'aérer intensément pendant 4 à 6 semaines après application. Les émissions décroissent rapidement mais ne s'arrêtent pas à la fin du séchage visible. Dans une chambre d'enfant, doublez la précaution.",
     },
   ];
-  const faqJsonLd = getFaqPageJsonLd(faqItems);
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       {/* ① Hero */}
       <HeroPillar
@@ -232,6 +227,12 @@ export default function MateriauxSainsPage() {
             title: "Choisir une peinture plus saine : label A+, COV et alternatives",
             description: "Comment lire l'étiquette d'une peinture, comprendre le label A+, identifier les alternatives naturelles et éviter les erreurs fréquentes lors de l'achat.",
             href: "/materiaux-sains/peinture-plus-saine/",
+          },
+          {
+            number: "10",
+            title: "Panneaux bois agglomérés, MDF et OSB : émissions et choix",
+            description: "Classes E1, E0, ENF, CARB Phase 2 et future E05 : comprendre les émissions de formaldéhyde des panneaux et choisir un mobilier moins émissif.",
+            href: "/materiaux-sains/panneaux-bois-formaldehyde/",
           },
         ]}
       />

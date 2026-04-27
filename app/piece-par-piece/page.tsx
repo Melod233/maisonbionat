@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { getBreadcrumbJsonLd, getFaqPageJsonLd } from "@/lib/seo/jsonld";
+import { getBreadcrumbJsonLd } from "@/lib/seo/jsonld";
 import Link from "next/link";
 import SectionLabel from "@/components/ui/SectionLabel";
 import PillarFaqSection from "@/components/pillar/PillarFaqSection";
@@ -153,16 +153,11 @@ export default function PieceParPiecePage() {
         "Oui, si le garage est attenant au logement et que la porte de communication n'est pas étanche. Le monoxyde de carbone (véhicules), les vapeurs de solvants et les pesticides peuvent migrer vers les pièces habitées. La priorité : une porte coupe-feu étanche et une ventilation indépendante du circuit VMC principal.",
     },
   ];
-  const faqJsonLd = getFaqPageJsonLd(faqItems);
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       {/* ① Hero ─────────────────────────────────────────── */}
       <section className="bg-dark pt-14 pb-20 lg:pt-20 lg:pb-24">

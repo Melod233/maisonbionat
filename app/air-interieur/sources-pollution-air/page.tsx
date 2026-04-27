@@ -313,18 +313,18 @@ export default function SourcesPollutionAirPage() {
             href: "/air-interieur/polluants-interieurs-frequents/",
           },
           {
-            tag: "Produits et habitudes",
-            title: "Produits ménagers et air intérieur",
+            tag: "Air intérieur",
+            title: "Le formaldéhyde dans la maison",
             description:
-              "Sprays, bougies, nettoyants : les gestes et substitutions simples pour réduire la pollution chimique quotidienne.",
-            href: "/produits-et-habitudes/",
+              "Cancérogène avéré et présent partout : sources réelles, valeurs guides ANSES et leviers concrets pour réduire l'exposition.",
+            href: "/air-interieur/formaldehyde-maison/",
           },
           {
-            tag: "Matériaux sains",
-            title: "Choisir des matériaux à faibles émissions",
+            tag: "Air intérieur",
+            title: "Plantes dépolluantes : ce que la science dit vraiment",
             description:
-              "Peintures, revêtements, meubles : comprendre l'étiquetage et faire de meilleurs choix pour réduire les sources à la source.",
-            href: "/materiaux-sains/materiaux-faibles-emissions/",
+              "Étude NASA 1989 et avis ADEME 2011 : pourquoi les plantes ne dépolluent pas un logement, et le rôle utile qu'elles jouent vraiment.",
+            href: "/air-interieur/plantes-depolluantes-maison/",
           },
         ]}
       />

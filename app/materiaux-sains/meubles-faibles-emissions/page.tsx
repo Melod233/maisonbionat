@@ -306,18 +306,18 @@ export default function MeublesFaiblesEmissionsPage() {
             href: "/materiaux-sains/degazage-meubles-neufs/",
           },
           {
-            tag: "Air intérieur",
-            title: "Polluants intérieurs les plus fréquents",
+            tag: "Matériaux sains",
+            title: "Panneaux bois agglomérés, MDF et OSB : émissions et choix",
             description:
-              "Le formaldéhyde des meubles s'inscrit dans un tableau plus large de polluants intérieurs. Comprendre l'ensemble pour agir dans le bon ordre.",
-            href: "/air-interieur/polluants-interieurs-frequents/",
+              "À la source du formaldéhyde des meubles : classes E1, E0, ENF et CARB Phase 2 pour choisir un panneau moins émissif.",
+            href: "/materiaux-sains/panneaux-bois-formaldehyde/",
           },
           {
             tag: "Air intérieur",
-            title: "Améliorer la qualité de l'air de votre logement",
+            title: "Le formaldéhyde dans la maison",
             description:
-              "Les meubles sont l'une des sources, pas la seule. Un plan d'action global pour améliorer l'air intérieur progressivement.",
-            href: "/air-interieur/ameliorer-air-maison/",
+              "Vue d'ensemble du formaldéhyde émis par les meubles, peintures et matériaux : valeurs guides ANSES et leviers de réduction.",
+            href: "/air-interieur/formaldehyde-maison/",
           },
         ]}
       />

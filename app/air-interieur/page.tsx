@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { getBreadcrumbJsonLd, getFaqPageJsonLd } from "@/lib/seo/jsonld";
+import { getBreadcrumbJsonLd } from "@/lib/seo/jsonld";
 import HeroPillar from "@/components/pillar/HeroPillar";
 import InsightGrid from "@/components/pillar/InsightGrid";
 import PriorityBlock from "@/components/pillar/PriorityBlock";
@@ -42,7 +42,7 @@ export default function AirInterieurPage() {
     {
       question: "Qu'est-ce que le formaldéhyde et où le trouve-t-on ?",
       answer:
-        "Le formaldéhyde est un gaz incolore, classé cancérigène avéré (groupe 1, CIRC 2004). On le trouve dans les panneaux de bois aggloméré, certaines peintures, colles, textiles traités et produits d'entretien. La valeur guide ANSES pour une exposition chronique est de 10 µg/m³ (en vigueur depuis janvier 2023).",
+        "Le formaldéhyde est un gaz incolore, classé cancérogène avéré pour l'homme par le CIRC depuis 2004 (groupe 1). On le trouve dans les panneaux de bois aggloméré, certaines peintures, colles, textiles traités et produits d'entretien. La valeur guide ANSES pour une exposition long terme dans l'air intérieur est de 100 µg/m³ ; le seuil réglementaire applicable aux établissements recevant du public a été abaissé à 10 µg/m³ au 1er janvier 2023.",
     },
     {
       question: "Un purificateur d'air vaut-il vraiment la peine ?",
@@ -55,16 +55,11 @@ export default function AirInterieurPage() {
         "Oui, notamment les meubles en panneaux de bois aggloméré (MDF, aggloméré). Ils émettent du formaldéhyde et d'autres COV, surtout dans les premières semaines. Laissez-les dégazer dans une pièce ventilée avant de les installer dans une chambre.",
     },
   ];
-  const faqJsonLd = getFaqPageJsonLd(faqItems);
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       {/* ① Hero */}
       <HeroPillar
@@ -103,7 +98,7 @@ export default function AirInterieurPage() {
           {
             number: "04",
             label: "Formaldéhyde omniprésent",
-            text: "Le formaldéhyde, classé cancérigène avéré (groupe 1) par le CIRC depuis 2004, est présent dans la majorité des logements. La valeur guide ANSES pour une exposition chronique est fixée à 10 µg/m³ depuis janvier 2023.",
+            text: "Le formaldéhyde, classé cancérogène avéré (groupe 1) par le CIRC depuis 2004, est présent dans la majorité des logements. Valeur guide ANSES long terme : 100 µg/m³ ; seuil ERP réglementaire abaissé à 10 µg/m³ depuis janvier 2023.",
           },
         ]}
       />
@@ -225,6 +220,24 @@ export default function AirInterieurPage() {
             title: "Trop de poussière dans la maison : causes et solutions durables",
             description: "La poussière revient trop vite ? Identifier pourquoi (acariens, VMC, textiles, extérieur) et agir sur les causes, pas seulement sur les surfaces.",
             href: "/air-interieur/poussiere-maison/",
+          },
+          {
+            number: "10",
+            title: "Le formaldéhyde dans la maison : sources, niveaux et solutions",
+            description: "Cancérogène avéré, présent dans presque tous les logements : sources réelles, valeurs guides ANSES, niveaux mesurés et leviers pour réduire l'exposition.",
+            href: "/air-interieur/formaldehyde-maison/",
+          },
+          {
+            number: "11",
+            title: "Purificateur d'air maison : utile, gadget ou complément ?",
+            description: "Ce qu'un purificateur sait vraiment faire (HEPA, charbon actif), ses limites sur les COV gazeux, et les cas où il devient pertinent.",
+            href: "/air-interieur/purificateur-air-maison/",
+          },
+          {
+            number: "12",
+            title: "Plantes dépolluantes : ce que la science dit vraiment",
+            description: "L'étude NASA de 1989 et l'avis ADEME 2011 : pourquoi les plantes ne dépolluent pas un logement, et le rôle utile qu'elles jouent vraiment.",
+            href: "/air-interieur/plantes-depolluantes-maison/",
           },
         ]}
       />

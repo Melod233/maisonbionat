@@ -296,11 +296,11 @@ export default function MoisissuresDansLaMaisonPage() {
             href: "/humidite-maison/problemes-humidite/",
           },
           {
-            tag: "Air intérieur",
-            title: "Qualité de l'air et polluants",
+            tag: "Humidité maison",
+            title: "Salpêtre sur les murs : reconnaître, traiter et prévenir",
             description:
-              "Les spores de moisissures sont un polluant biologique de l'air intérieur. Comprendre l'ensemble des polluants présents chez vous.",
-            href: "/air-interieur/",
+              "Souvent confondu avec une moisissure : reconnaître le salpêtre, identifier la cause d'humidité structurelle et choisir un traitement durable.",
+            href: "/humidite-maison/salpetre-murs/",
           },
           {
             tag: "Rénovation saine",

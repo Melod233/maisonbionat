@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { getBreadcrumbJsonLd, getBookReviewJsonLd, getFaqPageJsonLd } from "@/lib/seo/jsonld";
+import { getBreadcrumbJsonLd, getBookReviewJsonLd } from "@/lib/seo/jsonld";
 import { getReviewBreadcrumbs } from "@/lib/seo/breadcrumbs";
 import { laConceptionBioclimatique as review } from "@/data/reviews";
 
@@ -59,8 +59,6 @@ export default function LaConceptionBioclimatiquePage() {
     pageUrl: `/livres-eco-construction/${review.slug}/`,
   });
 
-  const faqJsonLd = getFaqPageJsonLd(review.faq);
-
   return (
     <>
       <script
@@ -70,10 +68,6 @@ export default function LaConceptionBioclimatiquePage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(bookReviewJsonLd) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
 
       {/* ① Hero éditorial */}

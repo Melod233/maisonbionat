@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { getBreadcrumbJsonLd, getFaqPageJsonLd } from "@/lib/seo/jsonld";
+import { getBreadcrumbJsonLd } from "@/lib/seo/jsonld";
 import HeroPillar from "@/components/pillar/HeroPillar";
 import InsightGrid from "@/components/pillar/InsightGrid";
 import PriorityBlock from "@/components/pillar/PriorityBlock";
@@ -55,16 +55,11 @@ export default function ProduitsEtHabitudesPage() {
         "Les acariens se développent dans les environnements chauds et humides. Les mesures les plus efficaces : maintenir l'hygrométrie en dessous de 50 %, laver la literie à 60 °C régulièrement, utiliser des housses anti-acariens sur matelas et oreillers, aspirer avec un filtre HEPA. Les sprays anti-acariens chimiques sont moins efficaces que ces mesures préventives.",
     },
   ];
-  const faqJsonLd = getFaqPageJsonLd(faqItems);
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       {/* ① Hero */}
       <HeroPillar

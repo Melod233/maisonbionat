@@ -287,10 +287,10 @@ export default function TropDePoussierePage() {
         items={[
           {
             tag: "Air intérieur",
-            title: "Qualité de l'air intérieur",
+            title: "Purificateur d'air maison : utile, gadget ou complément ?",
             description:
-              "La poussière est l'une des composantes de la pollution intérieure. Comprendre l'ensemble des polluants pour agir efficacement.",
-            href: "/air-interieur/",
+              "Avant d'investir dans un purificateur pour maîtriser la poussière, comprendre ce qu'il fait vraiment et ce qu'il ne remplace pas.",
+            href: "/air-interieur/purificateur-air-maison/",
           },
           {
             tag: "Pièce par pièce",

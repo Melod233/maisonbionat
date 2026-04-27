@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { getBreadcrumbJsonLd, getFaqPageJsonLd } from "@/lib/seo/jsonld";
+import { getBreadcrumbJsonLd } from "@/lib/seo/jsonld";
 import HeroPillar from "@/components/pillar/HeroPillar";
 import InsightGrid from "@/components/pillar/InsightGrid";
 import PriorityBlock from "@/components/pillar/PriorityBlock";
@@ -55,16 +55,11 @@ export default function MaisonSaineFamillePage() {
         "Oui. Un taux d'humidité supérieur à 60 % favorise le développement des moisissures et la prolifération des acariens, deux facteurs de risque documentés pour les pathologies respiratoires chez l'enfant. Visez 40 à 55 % dans la chambre bébé, avec un thermomètre-hygromètre pour vérifier.",
     },
   ];
-  const faqJsonLd = getFaqPageJsonLd(faqItems);
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       {/* ① Hero */}
       <HeroPillar
