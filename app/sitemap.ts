@@ -5,6 +5,14 @@ const BASE = "https://www.maisonbionat.fr";
 const SILOS_UPDATED = "2025-03-20";
 const PAGES_UPDATED = "2025-03-20";
 
+// WordPress renvoie modified au format "2024-09-12T14:23:45" (sans Z ni offset),
+// ce qui n'est pas un W3C datetime valide pour les sitemaps (Search Console rejette).
+// On convertit en Date JS pour que Next.js sérialise en ISO 8601 complet avec Z.
+function normalizeWpDate(raw: string, fallback: string): string | Date {
+  const d = new Date(raw);
+  return isNaN(d.getTime()) ? fallback : d;
+}
+
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // Guides WordPress (récupérés dynamiquement)
   let guideEntries: MetadataRoute.Sitemap = [];
@@ -12,11 +20,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   try {
     const guides = await getAllGuidesForSitemap();
     if (guides.length > 0) {
-      guidesIndexLastModified = guides[0].modified;
+      guidesIndexLastModified = normalizeWpDate(guides[0].modified, SILOS_UPDATED);
     }
     guideEntries = guides.map((g) => ({
       url: `${BASE}/guides/${g.slug}/`,
-      lastModified: g.modified,
+      lastModified: normalizeWpDate(g.modified, PAGES_UPDATED),
       changeFrequency: "monthly" as const,
       priority: 0.7,
     }));
