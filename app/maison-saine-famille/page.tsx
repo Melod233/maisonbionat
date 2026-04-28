@@ -114,7 +114,7 @@ export default function MaisonSaineFamillePage() {
             action: "Traiter la chambre de l'enfant en premier",
             description:
               "C'est l'espace le plus occupé, avec les nuits les plus longues. Priorités : ventilation fonctionnelle, taux d'humidité entre 40 et 60 %, absence de moisissures, matériaux A+ pour les finitions récentes.",
-            href: "/maison-saine-famille/chambre-enfant-saine/",
+            href: "/piece-par-piece/chambre-enfant-saine/",
           },
           {
             number: "02",
@@ -182,18 +182,12 @@ export default function MaisonSaineFamillePage() {
           },
           {
             number: "02",
-            title: "Chambre d'enfant saine",
-            description: "Au-delà du bébé : comment maintenir une chambre d'enfant avec un air de qualité, des matériaux adaptés et une humidité maîtrisée.",
-            href: "/maison-saine-famille/chambre-enfant-saine/",
-          },
-          {
-            number: "03",
             title: "Produits ménagers avec des enfants",
             description: "Quels produits éviter, lesquels adopter, et comment organiser le ménage pour limiter l'exposition des enfants aux substances irritantes.",
             href: "/maison-saine-famille/produits-menagers-enfants/",
           },
           {
-            number: "04",
+            number: "03",
             title: "Logement et grossesse",
             description: "Travaux, produits, ventilation : les précautions à prendre pendant la grossesse pour protéger le développement du bébé.",
             href: "/maison-saine-famille/maison-grossesse/",

@@ -475,12 +475,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.7,
     },
     {
-      url: `${BASE}/maison-saine-famille/chambre-enfant-saine/`,
-      lastModified: PAGES_UPDATED,
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    {
       url: `${BASE}/maison-saine-famille/maison-grossesse/`,
       lastModified: PAGES_UPDATED,
       changeFrequency: "monthly",

@@ -289,11 +289,11 @@ export default function ProduitsMenuagersEnfantsPage() {
         title="Aller plus loin sur ce sujet"
         items={[
           {
-            tag: "Maison saine famille",
+            tag: "Pièce par pièce",
             title: "Chambre d'enfant saine",
             description:
               "Ventilation, matériaux et entretien : les priorités pour améliorer la qualité de l'air dans la chambre de votre enfant.",
-            href: "/maison-saine-famille/chambre-enfant-saine/",
+            href: "/piece-par-piece/chambre-enfant-saine/",
           },
           {
             tag: "Produits et habitudes",

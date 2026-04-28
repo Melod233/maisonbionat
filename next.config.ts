@@ -21,6 +21,22 @@ const nextConfig: NextConfig = {
       : [],
   },
 
+  // Redirections 301 pour résoudre les cannibalisations / changements d'URL
+  async redirects() {
+    return [
+      {
+        source: "/maison-saine-famille/chambre-enfant-saine",
+        destination: "/piece-par-piece/chambre-enfant-saine/",
+        permanent: true,
+      },
+      {
+        source: "/maison-saine-famille/chambre-enfant-saine/",
+        destination: "/piece-par-piece/chambre-enfant-saine/",
+        permanent: true,
+      },
+    ];
+  },
+
   // Headers de sécurité de base
   async headers() {
     return [
