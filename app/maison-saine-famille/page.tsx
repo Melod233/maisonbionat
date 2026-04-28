@@ -192,6 +192,12 @@ export default function MaisonSaineFamillePage() {
             description: "Travaux, produits, ventilation : les précautions à prendre pendant la grossesse pour protéger le développement du bébé.",
             href: "/maison-saine-famille/maison-grossesse/",
           },
+          {
+            number: "04",
+            title: "Allergies respiratoires de l'enfant : agir sur l'environnement domestique",
+            description: "Acariens, animaux, moisissures : ce que les parents peuvent faire dans le logement pour limiter l'exposition aux allergènes, en complément du suivi médical.",
+            href: "/maison-saine-famille/allergies-respiratoires-enfant/",
+          },
         ]}
       />
 

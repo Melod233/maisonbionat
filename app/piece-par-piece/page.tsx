@@ -91,6 +91,16 @@ const rooms = [
       "Terrasse et jardin introduisent pollens, résidus de pesticides et polluants dans le logement via les chaussures et les vêtements. Une entrée bien pensée limite significativement ces apports.",
     href: "/piece-par-piece/exterieur-sain/",
   },
+  {
+    number: "08",
+    name: "Bureau / télétravail",
+    tag: "Pièce sous-estimée",
+    stat: "1500+ ppm",
+    statLabel: "CO₂ en quelques heures",
+    insight:
+      "Plusieurs heures par jour dans une petite pièce fermée font monter le CO₂ à des niveaux qui dégradent la concentration. Aération régulière, lumière naturelle et mobilier A+ sont les leviers concrets.",
+    href: "/piece-par-piece/bureau-teletravail-sain/",
+  },
 ];
 
 const diagnostics = [
@@ -123,6 +133,11 @@ const diagnostics = [
     symptom: "Air lourd, pièce qui semble confinée",
     rooms: ["Toutes les pièces"],
     hrefs: ["/air-interieur/"],
+  },
+  {
+    symptom: "Fatigue, baisse de concentration en télétravail",
+    rooms: ["Bureau / télétravail"],
+    hrefs: ["/piece-par-piece/bureau-teletravail-sain/"],
   },
 ];
 

@@ -263,6 +263,18 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.7,
     },
     {
+      url: `${BASE}/materiaux-sains/etiquetage-cov-comprendre/`,
+      lastModified: PAGES_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: `${BASE}/materiaux-sains/colles-faibles-emissions/`,
+      lastModified: PAGES_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
       url: `${BASE}/materiaux-sains/degazage-meubles-neufs/`,
       lastModified: PAGES_UPDATED,
       changeFrequency: "monthly",
@@ -387,6 +399,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.7,
     },
     {
+      url: `${BASE}/piece-par-piece/bureau-teletravail-sain/`,
+      lastModified: PAGES_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
       url: `${BASE}/piece-par-piece/chambre-saine/`,
       lastModified: PAGES_UPDATED,
       changeFrequency: "monthly",
@@ -424,6 +442,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     },
 
     // ── Rénovation saine (7) ─────────────────────────────────
+    {
+      url: `${BASE}/renovation-saine/ventilation-pendant-travaux/`,
+      lastModified: PAGES_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
     {
       url: `${BASE}/renovation-saine/aerer-apres-travaux/`,
       lastModified: PAGES_UPDATED,
@@ -470,6 +494,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     // ── Maison saine famille (4) ─────────────────────────────
     {
       url: `${BASE}/maison-saine-famille/chambre-bebe-saine/`,
+      lastModified: PAGES_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: `${BASE}/maison-saine-famille/allergies-respiratoires-enfant/`,
       lastModified: PAGES_UPDATED,
       changeFrequency: "monthly",
       priority: 0.7,

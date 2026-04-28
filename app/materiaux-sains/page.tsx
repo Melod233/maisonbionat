@@ -234,6 +234,18 @@ export default function MateriauxSainsPage() {
             description: "Classes E1, E0, ENF, CARB Phase 2 et future E05 : comprendre les émissions de formaldéhyde des panneaux et choisir un mobilier moins émissif.",
             href: "/materiaux-sains/panneaux-bois-formaldehyde/",
           },
+          {
+            number: "11",
+            title: "Étiquetage A+ : comprendre les classes COV",
+            description: "Décret 2011-321, classes A+ à C, 10 substances mesurées : ce que dit vraiment l'étiquette obligatoire des produits de construction et ses limites.",
+            href: "/materiaux-sains/etiquetage-cov-comprendre/",
+          },
+          {
+            number: "12",
+            title: "Colles à faibles émissions : choisir et poser sans dégrader l'air",
+            description: "Colles à bois, à parquet, à carrelage : repérer A+ et EC1, comprendre les alternatives sans formaldéhyde et éviter de gâcher un revêtement A+ par une mauvaise colle.",
+            href: "/materiaux-sains/colles-faibles-emissions/",
+          },
         ]}
       />
 

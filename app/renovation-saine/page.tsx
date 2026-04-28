@@ -216,6 +216,12 @@ export default function RenovationSainePage() {
             description: "Rénovation saine : choisir les matériaux A+, planifier l'ordre des travaux, gérer l'amiante et le plomb, prévoir le délai de dégazage. Un guide structuré pour agir dans les bonnes conditions.",
             href: "/renovation-saine/renover-plus-sainement/",
           },
+          {
+            number: "08",
+            title: "Ventilation pendant les travaux : protéger l'air en chantier",
+            description: "Pendant et juste après la rénovation, les concentrations en COV atteignent leur pic. Préparer la VMC, isoler la zone, coordonner les phases pour limiter l'exposition.",
+            href: "/renovation-saine/ventilation-pendant-travaux/",
+          },
         ]}
       />
 
