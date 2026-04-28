@@ -205,7 +205,7 @@ export default function RadonMaisonPage() {
             cause: "L'eau de puits ou de forage privé",
             explanation:
               "Une eau profonde issue d'un sol granitique peut contenir du radon dissous, libéré ensuite à la douche ou au robinet. La contribution à l'exposition par inhalation reste faible dans la majorité des cas, mais doit être considérée pour les habitations alimentées exclusivement par forage privé en zone 3.",
-            frequency: "rare",
+            frequency: "moins fréquent",
           },
         ]}
       />
