@@ -228,6 +228,18 @@ export default function HumiditeMaisonPage() {
             description: "Reconnaître le salpêtre, le distinguer de la moisissure et de l'efflorescence cimentaire, identifier les remontées capillaires et choisir un traitement durable.",
             href: "/humidite-maison/salpetre-murs/",
           },
+          {
+            number: "10",
+            title: "Taux d'humidité idéal : valeurs cibles et hygromètre",
+            description: "Plage 40-60 % recommandée par l'ADEME, repères pièce par pièce, saisonnalité et corrections concrètes en cas de taux trop bas ou trop élevé.",
+            href: "/humidite-maison/taux-humidite-ideal/",
+          },
+          {
+            number: "11",
+            title: "Déshumidificateur : quand il sert, quand il ne sert à rien",
+            description: "Avant d'acheter, savoir si un déshumidificateur résout vraiment le problème : compresseur ou absorption, dimensionnement, et limites face à l'humidité structurelle.",
+            href: "/humidite-maison/deshumidificateur-maison/",
+          },
         ]}
       />
 

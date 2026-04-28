@@ -100,6 +100,16 @@ export default function AirInterieurPage() {
             label: "Formaldéhyde omniprésent",
             text: "Le formaldéhyde, classé cancérogène avéré (groupe 1) par le CIRC depuis 2004, est présent dans la majorité des logements. Valeur guide ANSES long terme : 100 µg/m³ ; seuil ERP réglementaire abaissé à 10 µg/m³ depuis janvier 2023.",
           },
+          {
+            number: "05",
+            label: "Radon trop peu connu",
+            text: "Gaz radioactif naturel, deuxième cause de cancer du poumon en France après le tabac. L'IRSN estime à environ 3 000 le nombre de décès annuels attribuables au radon. Niveau de référence réglementaire : 300 Bq/m³.",
+          },
+          {
+            number: "06",
+            label: "CO2, indicateur de ventilation",
+            text: "Le CO2 n'est pas toxique aux concentrations domestiques, mais c'est le meilleur thermomètre du confinement. Au-delà de 1000 ppm, l'air est confiné et les autres polluants intérieurs s'accumulent en parallèle.",
+          },
         ]}
       />
 
@@ -238,6 +248,24 @@ export default function AirInterieurPage() {
             title: "Plantes dépolluantes : ce que la science dit vraiment",
             description: "L'étude NASA de 1989 et l'avis ADEME 2011 : pourquoi les plantes ne dépolluent pas un logement, et le rôle utile qu'elles jouent vraiment.",
             href: "/air-interieur/plantes-depolluantes-maison/",
+          },
+          {
+            number: "13",
+            title: "Radon : comprendre le risque, vérifier sa zone, réduire l'exposition",
+            description: "Gaz radioactif naturel, deuxième cause de cancer du poumon en France. Zonage IRSN, mesure par dosimètre passif et leviers structurels selon les niveaux.",
+            href: "/air-interieur/radon-maison/",
+          },
+          {
+            number: "14",
+            title: "CO2 dans la maison : indicateur de confinement et seuils utiles",
+            description: "Ce que mesure réellement un capteur de CO2, pourquoi 1000 ppm reste un repère clé, et comment l'interpréter en chambre, séjour ou bureau.",
+            href: "/air-interieur/co2-maison/",
+          },
+          {
+            number: "15",
+            title: "Acariens : allergènes, literie et leviers efficaces",
+            description: "Première cause d'allergie respiratoire en logement. Conditions de prolifération (HR > 60 %), traitement de la literie et mesures à efficacité démontrée.",
+            href: "/air-interieur/acariens-maison/",
           },
         ]}
       />

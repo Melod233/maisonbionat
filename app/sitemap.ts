@@ -97,6 +97,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
     // ── Air intérieur (12) ───────────────────────────────────
     {
+      url: `${BASE}/air-interieur/acariens-maison/`,
+      lastModified: PAGES_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
       url: `${BASE}/air-interieur/aeration-ou-ventilation/`,
       lastModified: PAGES_UPDATED,
       changeFrequency: "monthly",
@@ -116,6 +122,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     },
     {
       url: `${BASE}/air-interieur/bien-aerer-maison/`,
+      lastModified: PAGES_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: `${BASE}/air-interieur/co2-maison/`,
       lastModified: PAGES_UPDATED,
       changeFrequency: "monthly",
       priority: 0.7,
@@ -163,6 +175,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.7,
     },
     {
+      url: `${BASE}/air-interieur/radon-maison/`,
+      lastModified: PAGES_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
       url: `${BASE}/air-interieur/sources-pollution-air/`,
       lastModified: PAGES_UPDATED,
       changeFrequency: "monthly",
@@ -178,6 +196,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     },
     {
       url: `${BASE}/humidite-maison/condensation-maison/`,
+      lastModified: PAGES_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: `${BASE}/humidite-maison/deshumidificateur-maison/`,
       lastModified: PAGES_UPDATED,
       changeFrequency: "monthly",
       priority: 0.7,
@@ -208,6 +232,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     },
     {
       url: `${BASE}/humidite-maison/salpetre-murs/`,
+      lastModified: PAGES_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: `${BASE}/humidite-maison/taux-humidite-ideal/`,
       lastModified: PAGES_UPDATED,
       changeFrequency: "monthly",
       priority: 0.7,

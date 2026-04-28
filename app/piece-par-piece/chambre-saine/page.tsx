@@ -270,22 +270,22 @@ export default function ChambreSainePage() {
         title="Ce sujet croise aussi"
         items={[
           {
+            tag: "Air intérieur",
+            title: "Acariens : allergènes, literie et leviers efficaces",
+            description: "Le dossier dédié aux acariens : conditions de prolifération, mesures à efficacité démontrée et erreurs courantes. Indispensable pour une chambre saine.",
+            href: "/air-interieur/acariens-maison/",
+          },
+          {
             tag: "Humidité maison",
-            title: "Humidité et condensation",
-            description: "Les fenêtres qui suent, les murs froids, l'air lourd au réveil : comprendre et agir sur l'humidité dans la chambre.",
-            href: "/humidite-maison/",
+            title: "Taux d'humidité idéal : valeurs cibles et hygromètre",
+            description: "Repères 40-60 % HR pièce par pièce, mesure et corrections. La chambre vise plutôt 40-50 % en hiver pour limiter acariens et condensation.",
+            href: "/humidite-maison/taux-humidite-ideal/",
           },
           {
             tag: "Air intérieur",
-            title: "COV et qualité de l'air nocturne",
-            description: "Les matériaux et meubles de la chambre émettent des composés volatils. Comprendre les sources et les solutions.",
-            href: "/air-interieur/",
-          },
-          {
-            tag: "Matériaux sains",
-            title: "Meubles et finitions faibles émissions",
-            description: "Choisir des matériaux A+ pour la chambre, comprendre l'étiquetage et éviter les pièges.",
-            href: "/materiaux-sains/",
+            title: "CO2 dans la maison : indicateur de confinement",
+            description: "Une chambre fermée la nuit dépasse souvent 2000 ppm. Comprendre ce que mesure un capteur de CO2 et comment ramener la pièce sous 1000 ppm.",
+            href: "/air-interieur/co2-maison/",
           },
         ]}
       />
