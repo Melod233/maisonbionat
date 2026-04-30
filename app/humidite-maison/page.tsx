@@ -240,6 +240,18 @@ export default function HumiditeMaisonPage() {
             description: "Avant d'acheter, savoir si un déshumidificateur résout vraiment le problème : compresseur ou absorption, dimensionnement, et limites face à l'humidité structurelle.",
             href: "/humidite-maison/deshumidificateur-maison/",
           },
+          {
+            number: "12",
+            title: "Remontées capillaires : reconnaître et traiter durablement",
+            description: "Humidité ascensionnelle dans les murs anciens, signes caractéristiques (auréole 0,80-1,50 m, salpêtre), solutions hiérarchisées : injection de résine, drainage, électro-osmose.",
+            href: "/humidite-maison/remontees-capillaires/",
+          },
+          {
+            number: "13",
+            title: "Condensation sur les fenêtres : causes et solutions durables",
+            description: "Buée matinale, point de rosée, ventilation : pourquoi la fenêtre n'est presque jamais la cause et comment agir efficacement sur l'humidité produite.",
+            href: "/humidite-maison/condensation-fenetre/",
+          },
         ]}
       />
 

@@ -3,13 +3,14 @@ import NavMobile from "./NavMobile";
 import Logo from "./Logo";
 
 export const navLinks = [
-  { label: "Air intérieur",    href: "/air-interieur/" },
-  { label: "Matériaux sains",  href: "/materiaux-sains/" },
-  { label: "Humidité",         href: "/humidite-maison/" },
-  { label: "Produits",         href: "/produits-et-habitudes/" },
-  { label: "Pièce par pièce",  href: "/piece-par-piece/" },
-  { label: "Rénovation",       href: "/renovation-saine/" },
-  { label: "Famille",          href: "/maison-saine-famille/" },
+  { label: "Air",         href: "/air-interieur/" },
+  { label: "Eau",         href: "/eau-maison/" },
+  { label: "Matériaux",   href: "/materiaux-sains/" },
+  { label: "Humidité",    href: "/humidite-maison/" },
+  { label: "Produits",    href: "/produits-et-habitudes/" },
+  { label: "Pièces",      href: "/piece-par-piece/" },
+  { label: "Rénovation",  href: "/renovation-saine/" },
+  { label: "Famille",     href: "/maison-saine-famille/" },
 ];
 
 export default function Header() {

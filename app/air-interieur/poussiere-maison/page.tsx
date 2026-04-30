@@ -300,11 +300,11 @@ export default function TropDePoussierePage() {
             href: "/piece-par-piece/chambre-saine/",
           },
           {
-            tag: "Humidité maison",
-            title: "Contrôler l'humidité",
+            tag: "Air intérieur",
+            title: "Acariens : allergènes, literie et leviers efficaces",
             description:
-              "L'hygrométrie est le facteur clé dans la prolifération des acariens. Maintenir un taux sous 50 % réduit significativement leur développement.",
-            href: "/humidite-maison/",
+              "Les débris d'acariens représentent une part majeure de la poussière domestique respirée. Conditions de prolifération (HR > 60 %), traitement de la literie et leviers à efficacité démontrée.",
+            href: "/air-interieur/acariens-maison/",
           },
         ]}
       />

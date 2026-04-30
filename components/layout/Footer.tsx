@@ -3,6 +3,7 @@ import Logo from "./Logo";
 
 const siloLinks = [
   { label: "Air intérieur",         href: "/air-interieur/" },
+  { label: "Eau maison",            href: "/eau-maison/" },
   { label: "Matériaux sains",       href: "/materiaux-sains/" },
   { label: "Humidité maison",       href: "/humidite-maison/" },
   { label: "Produits et habitudes", href: "/produits-et-habitudes/" },

@@ -291,10 +291,10 @@ export default function LabelAPlusTravauxPage() {
           },
           {
             tag: "Rénovation saine",
-            title: "Trouver un artisan pour une rénovation saine",
+            title: "VMC double flux : qualité d'air, performances et coûts",
             description:
-              "Comment s'assurer que l'artisan utilisera effectivement des produits A+ et respectera les bonnes pratiques d'aération pendant le chantier.",
-            href: "/renovation-saine/artisan-renovation-saine/",
+              "Le label A+ limite les émissions à la source ; une VMC double flux évacue ce qui est émis et filtre l'air entrant. Les deux leviers se combinent pour une qualité d'air mesurable.",
+            href: "/renovation-saine/vmc-double-flux/",
           },
         ]}
       />

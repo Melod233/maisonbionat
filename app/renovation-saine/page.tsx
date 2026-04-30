@@ -222,6 +222,12 @@ export default function RenovationSainePage() {
             description: "Pendant et juste après la rénovation, les concentrations en COV atteignent leur pic. Préparer la VMC, isoler la zone, coordonner les phases pour limiter l'exposition.",
             href: "/renovation-saine/ventilation-pendant-travaux/",
           },
+          {
+            number: "09",
+            title: "VMC double flux : qualité d'air, performances et coûts",
+            description: "Récupération 60-90 % de chaleur, filtration F7/ePM1 contre PM2,5 et pollens, 7 000-10 000 € posé en 2026. Pour quels logements et avec quelles aides MaPrimeRénov'.",
+            href: "/renovation-saine/vmc-double-flux/",
+          },
         ]}
       />
 

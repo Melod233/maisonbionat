@@ -296,11 +296,11 @@ export default function AererApresTravauxPage() {
             href: "/renovation-saine/label-a-plus-travaux/",
           },
           {
-            tag: "Air intérieur",
-            title: "Bien aérer sa maison au quotidien",
+            tag: "Rénovation saine",
+            title: "VMC double flux : qualité d'air, performances et coûts",
             description:
-              "L'aération post-travaux est un cas particulier de la bonne gestion de l'air intérieur au quotidien. Les gestes essentiels pour un renouvellement d'air efficace en toute situation.",
-            href: "/air-interieur/bien-aerer-maison/",
+              "Au-delà de l'aération manuelle post-travaux, une VMC double flux assure le renouvellement d'air permanent et filtre les particules entrantes. Pertinence selon le bâti, coûts et aides 2026.",
+            href: "/renovation-saine/vmc-double-flux/",
           },
           {
             tag: "Matériaux sains",

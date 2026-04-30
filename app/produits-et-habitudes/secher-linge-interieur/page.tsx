@@ -283,10 +283,10 @@ export default function SecherLingeInterieurPage() {
           },
           {
             tag: "Humidité maison",
-            title: "Réduire l'humidité au quotidien",
+            title: "Taux d'humidité idéal : valeurs cibles et hygromètre",
             description:
-              "Les gestes et habitudes pour maintenir un taux d'hygrométrie sain sans équipements coûteux.",
-            href: "/humidite-maison/reduire-humidite-maison/",
+              "Plage 40-60 % recommandée par l'ADEME : repères pour vérifier que votre logement reste dans la zone saine, surtout les jours de séchage de linge en intérieur.",
+            href: "/humidite-maison/taux-humidite-ideal/",
           },
           {
             tag: "Produits et habitudes",

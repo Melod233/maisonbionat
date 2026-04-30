@@ -2,8 +2,8 @@ import type { MetadataRoute } from "next";
 import { getAllGuidesForSitemap } from "@/lib/wordpress";
 
 const BASE = "https://www.maisonbionat.fr";
-const SILOS_UPDATED = "2025-03-20";
-const PAGES_UPDATED = "2025-03-20";
+const SILOS_UPDATED = "2026-04-30";
+const PAGES_UPDATED = "2026-04-30";
 
 // WordPress renvoie modified au format "2024-09-12T14:23:45" (sans Z ni offset),
 // ce qui n'est pas un W3C datetime valide pour les sitemaps (Search Console rejette).
@@ -94,8 +94,64 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: "weekly",
       priority: 0.8,
     },
+    {
+      url: `${BASE}/eau-maison/`,
+      lastModified: SILOS_UPDATED,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
 
-    // ── Air intérieur (12) ───────────────────────────────────
+    // ── Eau maison (8) ───────────────────────────────────────
+    {
+      url: `${BASE}/eau-maison/qualite-eau-robinet/`,
+      lastModified: PAGES_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: `${BASE}/eau-maison/plomb-canalisations/`,
+      lastModified: PAGES_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: `${BASE}/eau-maison/nitrates-eau-robinet/`,
+      lastModified: PAGES_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: `${BASE}/eau-maison/filtre-eau-robinet/`,
+      lastModified: PAGES_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: `${BASE}/eau-maison/pfas-eau-robinet/`,
+      lastModified: PAGES_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: `${BASE}/eau-maison/eau-calcaire-maison/`,
+      lastModified: PAGES_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: `${BASE}/eau-maison/chlore-eau-robinet/`,
+      lastModified: PAGES_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: `${BASE}/eau-maison/eau-bouteille-vs-robinet/`,
+      lastModified: PAGES_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+
+    // ── Air intérieur (17) ───────────────────────────────────
     {
       url: `${BASE}/air-interieur/acariens-maison/`,
       lastModified: PAGES_UPDATED,
@@ -186,8 +242,20 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: "monthly",
       priority: 0.7,
     },
+    {
+      url: `${BASE}/air-interieur/monoxyde-carbone-maison/`,
+      lastModified: PAGES_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: `${BASE}/air-interieur/particules-fines-maison/`,
+      lastModified: PAGES_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
 
-    // ── Humidité maison (9) ──────────────────────────────────
+    // ── Humidité maison (13) ─────────────────────────────────
     {
       url: `${BASE}/humidite-maison/chambre-humide/`,
       lastModified: PAGES_UPDATED,
@@ -254,8 +322,20 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: "monthly",
       priority: 0.7,
     },
+    {
+      url: `${BASE}/humidite-maison/remontees-capillaires/`,
+      lastModified: PAGES_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: `${BASE}/humidite-maison/condensation-fenetre/`,
+      lastModified: PAGES_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
 
-    // ── Matériaux sains (10) ─────────────────────────────────
+    // ── Matériaux sains (13) ─────────────────────────────────
     {
       url: `${BASE}/materiaux-sains/degazage-materiaux/`,
       lastModified: PAGES_UPDATED,
@@ -328,8 +408,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: "monthly",
       priority: 0.7,
     },
+    {
+      url: `${BASE}/materiaux-sains/parquet-massif-sain/`,
+      lastModified: PAGES_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
 
-    // ── Produits et habitudes (10) ───────────────────────────
+    // ── Produits et habitudes (11) ───────────────────────────
     {
       url: `${BASE}/produits-et-habitudes/alternatives-produits-menagers/`,
       lastModified: PAGES_UPDATED,
@@ -390,8 +476,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: "monthly",
       priority: 0.7,
     },
+    {
+      url: `${BASE}/produits-et-habitudes/diffuseur-huiles-essentielles/`,
+      lastModified: PAGES_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
 
-    // ── Pièce par pièce (7) ──────────────────────────────────
+    // ── Pièce par pièce (10) ─────────────────────────────────
     {
       url: `${BASE}/piece-par-piece/chambre-enfant-saine/`,
       lastModified: PAGES_UPDATED,
@@ -440,8 +532,20 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: "monthly",
       priority: 0.7,
     },
+    {
+      url: `${BASE}/piece-par-piece/buanderie-saine/`,
+      lastModified: PAGES_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: `${BASE}/piece-par-piece/sous-sol-sain/`,
+      lastModified: PAGES_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
 
-    // ── Rénovation saine (7) ─────────────────────────────────
+    // ── Rénovation saine (9) ─────────────────────────────────
     {
       url: `${BASE}/renovation-saine/ventilation-pendant-travaux/`,
       lastModified: PAGES_UPDATED,
@@ -490,8 +594,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: "monthly",
       priority: 0.7,
     },
+    {
+      url: `${BASE}/renovation-saine/vmc-double-flux/`,
+      lastModified: PAGES_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
 
-    // ── Maison saine famille (4) ─────────────────────────────
+    // ── Maison saine famille (5) ─────────────────────────────
     {
       url: `${BASE}/maison-saine-famille/chambre-bebe-saine/`,
       lastModified: PAGES_UPDATED,
@@ -512,6 +622,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     },
     {
       url: `${BASE}/maison-saine-famille/produits-menagers-enfants/`,
+      lastModified: PAGES_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: `${BASE}/maison-saine-famille/asthme-enfant-maison/`,
       lastModified: PAGES_UPDATED,
       changeFrequency: "monthly",
       priority: 0.7,

@@ -101,6 +101,26 @@ const rooms = [
       "Plusieurs heures par jour dans une petite pièce fermée font monter le CO₂ à des niveaux qui dégradent la concentration. Aération régulière, lumière naturelle et mobilier A+ sont les leviers concrets.",
     href: "/piece-par-piece/bureau-teletravail-sain/",
   },
+  {
+    number: "09",
+    name: "Buanderie",
+    tag: "Pièce humide à traiter comme telle",
+    stat: "1,5-3 L",
+    statLabel: "eau libérée par séchage",
+    insight:
+      "Une lessive de 5 kg libère 1,5 à 3 L d'eau pendant le séchage, soit l'équivalent de plusieurs douches. Sans extraction dédiée et sans organisation, l'humidité diffuse dans tout le logement et les COV des produits de lessive aussi.",
+    href: "/piece-par-piece/buanderie-saine/",
+  },
+  {
+    number: "10",
+    name: "Sous-sol / cave",
+    tag: "Interface avec le sol",
+    stat: "Radon",
+    statLabel: "porte d'entrée principale",
+    insight:
+      "Cave, sous-sol, vide sanitaire concentrent humidité du terrain et radon (en zone 2 ou 3) qui remontent ensuite vers les pièces de vie par tirage thermique. Un sous-sol mal géré contamine tout le logement.",
+    href: "/piece-par-piece/sous-sol-sain/",
+  },
 ];
 
 const diagnostics = [

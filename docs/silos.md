@@ -187,6 +187,42 @@ Traiter les travaux, rénovations et arbitrages liés à un habitat plus sain.
 - la structure pièce par pièce comme logique principale
 - les sujets très localisés qui relèvent d'un autre silo mère
 
+## SILO 8 - Eau maison
+### URL
+/eau-maison/
+
+### Rôle
+Traiter ce qui touche à l'eau consommée et utilisée dans la maison : qualité de l'eau du robinet, filtration, canalisations, populations sensibles.
+
+### Angle
+- qualité de l'eau du robinet (contrôle ARS, lecture des analyses)
+- plomb dans les canalisations privatives
+- nitrates et populations sensibles (nourrissons, femmes enceintes)
+- pesticides dans l'eau
+- PFAS et polluants émergents
+- chlore résiduel et sous-produits de désinfection
+- dureté de l'eau (calcaire) sous l'angle santé et domestique
+- choix d'un filtre adapté (carafe, charbon actif, osmoseur)
+- arbitrage eau du robinet vs eau en bouteille
+- eau de puits et forage privé
+- eau adaptée à la préparation des biberons
+
+### Exemples de pages enfants
+- /eau-maison/qualite-eau-robinet/
+- /eau-maison/plomb-canalisations/
+- /eau-maison/nitrates-eau-robinet/
+- /eau-maison/filtre-eau-robinet/
+- /eau-maison/pfas-eau-robinet/
+- /eau-maison/eau-calcaire-maison/
+- /eau-maison/chlore-eau-robinet/
+- /eau-maison/eau-bouteille-vs-robinet/
+
+### Ce que ce silo ne doit pas absorber
+- l'humidité ambiante de la maison (silo humidite-maison)
+- les remontées capillaires des murs (silo humidite-maison)
+- la qualité de l'air intérieur lié à la vapeur d'eau (silo air-interieur)
+- les considérations strictement plomberie sans angle sanitaire
+
 ## SILO 7 - Maison saine famille
 ### URL
 /maison-saine-famille/

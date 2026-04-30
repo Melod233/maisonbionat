@@ -198,6 +198,12 @@ export default function MaisonSaineFamillePage() {
             description: "Acariens, animaux, moisissures : ce que les parents peuvent faire dans le logement pour limiter l'exposition aux allergènes, en complément du suivi médical.",
             href: "/maison-saine-famille/allergies-respiratoires-enfant/",
           },
+          {
+            number: "05",
+            title: "Asthme de l'enfant : facteurs environnementaux à la maison",
+            description: "Acariens, moisissures, tabagisme passif, COV : les facteurs aggravants documentés (HAS 2023, SP2A) et les leviers d'éviction hiérarchisés en complément du traitement médical.",
+            href: "/maison-saine-famille/asthme-enfant-maison/",
+          },
         ]}
       />
 

@@ -267,6 +267,18 @@ export default function AirInterieurPage() {
             description: "Première cause d'allergie respiratoire en logement. Conditions de prolifération (HR > 60 %), traitement de la literie et mesures à efficacité démontrée.",
             href: "/air-interieur/acariens-maison/",
           },
+          {
+            number: "16",
+            title: "Monoxyde de carbone : reconnaître le risque et le prévenir",
+            description: "Première cause de mortalité par toxique en France (~100 décès/an). Sources, signes d'intoxication, détecteur EN 50291 et entretien obligatoire des chaudières.",
+            href: "/air-interieur/monoxyde-carbone-maison/",
+          },
+          {
+            number: "17",
+            title: "Particules fines (PM2,5 et PM10) : sources et leviers concrets",
+            description: "OQAI relève 19,1 µg/m³ en moyenne dans les logements français, près de 4 fois la valeur guide OMS 2021. Sources documentées et hiérarchisation des actions efficaces.",
+            href: "/air-interieur/particules-fines-maison/",
+          },
         ]}
       />
 

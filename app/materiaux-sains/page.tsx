@@ -246,6 +246,12 @@ export default function MateriauxSainsPage() {
             description: "Colles à bois, à parquet, à carrelage : repérer A+ et EC1, comprendre les alternatives sans formaldéhyde et éviter de gâcher un revêtement A+ par une mauvaise colle.",
             href: "/materiaux-sains/colles-faibles-emissions/",
           },
+          {
+            number: "13",
+            title: "Parquet massif sain : émissions, finitions et arbitrage matériau",
+            description: "Massif vs contrecollé vs stratifié, choix de la finition (huile, vernis aqueux, cire) et mode de pose : les critères qui pèsent vraiment sur l'air intérieur.",
+            href: "/materiaux-sains/parquet-massif-sain/",
+          },
         ]}
       />
 

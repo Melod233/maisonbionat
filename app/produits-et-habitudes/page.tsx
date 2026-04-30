@@ -234,6 +234,12 @@ export default function ProduitsEtHabitudesPage() {
             description: "44 % des produits d'entretien courants contiennent des composés dangereux. La plupart des substitutions sont simples et moins chères. Un guide pour agir dans le bon ordre.",
             href: "/produits-et-habitudes/reduire-produits-chimiques-maison/",
           },
+          {
+            number: "11",
+            title: "Diffuseur d'huiles essentielles : précautions et alternatives",
+            description: "Position ANSES (1 400+ cas centres antipoison entre 2011-2019), précautions enfants/femmes enceintes/asthmatiques, alternatives crédibles à la diffusion.",
+            href: "/produits-et-habitudes/diffuseur-huiles-essentielles/",
+          },
         ]}
       />
 
