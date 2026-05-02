@@ -10,6 +10,7 @@ const siloLinks = [
   { label: "Pièce par pièce",       href: "/piece-par-piece/" },
   { label: "Rénovation saine",      href: "/renovation-saine/" },
   { label: "Maison saine famille",  href: "/maison-saine-famille/" },
+  { label: "Chauffage sain",        href: "/chauffage-sain/" },
 ];
 
 // Pages à venir — affichées en texte non cliquable jusqu'à leur création

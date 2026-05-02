@@ -11,6 +11,7 @@ export const navLinks = [
   { label: "Pièces",      href: "/piece-par-piece/" },
   { label: "Rénovation",  href: "/renovation-saine/" },
   { label: "Famille",     href: "/maison-saine-famille/" },
+  { label: "Chauffage",   href: "/chauffage-sain/" },
 ];
 
 export default function Header() {

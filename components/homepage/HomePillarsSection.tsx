@@ -15,7 +15,7 @@ export default function HomePillarsSection() {
               className="font-semibold leading-[1.08] text-ink-inv mt-4"
               style={{ fontSize: "clamp(1.875rem, 3.5vw, 3rem)", letterSpacing: "-0.02em" }}
             >
-              Sept domaines pour agir{" "}
+              Neuf domaines pour agir{" "}
               <br className="hidden lg:block" />
               concrètement
             </h2>

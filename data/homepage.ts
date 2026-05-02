@@ -51,6 +51,8 @@ export const roomEntries: RoomEntry[] = [
   { label: "Cuisine", href: "/piece-par-piece/cuisine-saine/" },
   { label: "Salle de bain", href: "/piece-par-piece/salle-de-bain-saine/" },
   { label: "Salon", href: "/piece-par-piece/salon-sain/" },
+  { label: "Buanderie", href: "/piece-par-piece/buanderie-saine/" },
+  { label: "Sous-sol", href: "/piece-par-piece/sous-sol-sain/" },
   { label: "Garage", href: "/piece-par-piece/garage-sain/" },
   { label: "Extérieur", href: "/piece-par-piece/exterieur-sain/" },
 ];
@@ -71,6 +73,10 @@ export const problemEntries: ProblemEntry[] = [
   { label: "Produits ménagers irritants", href: "/produits-et-habitudes/produits-menagers-irritants/" },
   { label: "Choisir une peinture plus saine", href: "/materiaux-sains/peinture-plus-saine/" },
   { label: "Matériaux à faibles émissions", href: "/materiaux-sains/materiaux-faibles-emissions/" },
+  { label: "Qualité de l'eau du robinet", href: "/eau-maison/qualite-eau-robinet/" },
+  { label: "Plomb dans les canalisations", href: "/eau-maison/plomb-canalisations/" },
+  { label: "Radon dans la maison", href: "/air-interieur/radon-maison/" },
+  { label: "Poêle à bois et qualité de l'air", href: "/chauffage-sain/poele-bois-air-interieur/" },
 ];
 
 // ─── Section "Selon votre situation" ─────────────────────────────────────────
@@ -101,6 +107,11 @@ export const situationEntries: SituationEntry[] = [
     label: "Vous cherchez des matériaux plus naturels",
     description: "Comprendre les labels, comparer les options et éviter les pièges marketing.",
     href: "/materiaux-sains/materiaux-plus-naturels/",
+  },
+  {
+    label: "Vous cherchez le bon mode de chauffage",
+    description: "Comparer poêle à bois, pompe à chaleur et électrique selon votre logement et votre budget.",
+    href: "/chauffage-sain/choisir-chauffage-renovation/",
   },
 ];
 

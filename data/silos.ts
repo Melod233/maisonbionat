@@ -67,4 +67,20 @@ export const silos: Silo[] = [
     fullDescription:
       "Rendre son logement plus sain quand on vit en famille : chambre bébé, produits adaptés et arbitrages réalistes pour avancer progressivement.",
   },
+  {
+    slug: "eau-maison",
+    href: "/eau-maison/",
+    label: "Eau maison",
+    shortDescription: "Qualité de l'eau du robinet, filtres et canalisations.",
+    fullDescription:
+      "Qualité de l'eau du robinet, plomb dans les canalisations, nitrates, PFAS et filtration : comprendre ce qu'on consomme et agir en connaissance de cause.",
+  },
+  {
+    slug: "chauffage-sain",
+    href: "/chauffage-sain/",
+    label: "Chauffage sain",
+    shortDescription: "Poêle à bois, PAC, électrique et impact sur l'air.",
+    fullDescription:
+      "Poêle à bois, pompe à chaleur, chauffage électrique : impact sur la qualité de l'air, performance et arbitrages pour choisir le mode adapté à votre logement.",
+  },
 ];
