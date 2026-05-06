@@ -12,6 +12,7 @@ export const navLinks = [
   { label: "Rénovation",  href: "/renovation-saine/" },
   { label: "Famille",     href: "/maison-saine-famille/" },
   { label: "Chauffage",   href: "/chauffage-sain/" },
+  { label: "Jardin",      href: "/jardin/" },
 ];
 
 export default function Header() {

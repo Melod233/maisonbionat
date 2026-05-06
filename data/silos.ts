@@ -83,4 +83,12 @@ export const silos: Silo[] = [
     fullDescription:
       "Poêle à bois, pompe à chaleur, chauffage électrique : impact sur la qualité de l'air, performance et arbitrages pour choisir le mode adapté à votre logement.",
   },
+  {
+    slug: "jardin",
+    href: "/jardin/",
+    label: "Jardin",
+    shortDescription: "Sol vivant, eau, pesticides et équipements durables.",
+    fullDescription:
+      "Rendre son jardin plus sain, plus vivant et plus autonome : sol vivant, paillage, récupération d'eau de pluie, alternatives aux pesticides depuis la loi Labbé, équipements et matériaux extérieurs durables.",
+  },
 ];

@@ -260,22 +260,22 @@ export default function ExterieurPlusSainPage() {
         title="Ce sujet croise aussi"
         items={[
           {
-            tag: "Produits et habitudes",
-            title: "Produits de jardinage et alternatives",
-            description: "Les alternatives aux pesticides de synthèse pour un jardin sain qui ne contamine pas l'intérieur.",
-            href: "/produits-et-habitudes/",
+            tag: "Jardin",
+            title: "Le silo Jardin : sol vivant, eau, pesticides",
+            description: "Au-delà de la terrasse et de l'abord immédiat de la maison : le jardin et son écosystème, dans une perspective plus large.",
+            href: "/jardin/",
+          },
+          {
+            tag: "Jardin",
+            title: "Pesticides au jardin : alternatives concrètes",
+            description: "Loi Labbé, ce qui reste autorisé, et les alternatives qui marchent : paillage, désherbage thermique, plantes couvrantes.",
+            href: "/jardin/pesticides-jardin-alternatives/",
           },
           {
             tag: "Air intérieur",
             title: "Pollens et qualité de l'air",
             description: "Les allergènes polliniques sont des polluants biologiques de l'air intérieur. Comment les limiter.",
             href: "/air-interieur/",
-          },
-          {
-            tag: "Maison saine famille",
-            title: "Jardin et enfants",
-            description: "Les enfants jouent au sol, dans le jardin, à la terrasse. Adapter les espaces extérieurs à leur vulnérabilité.",
-            href: "/maison-saine-famille/",
           },
         ]}
       />

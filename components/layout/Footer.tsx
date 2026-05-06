@@ -11,6 +11,7 @@ const siloLinks = [
   { label: "Rénovation saine",      href: "/renovation-saine/" },
   { label: "Maison saine famille",  href: "/maison-saine-famille/" },
   { label: "Chauffage sain",        href: "/chauffage-sain/" },
+  { label: "Jardin",                href: "/jardin/" },
 ];
 
 // Liens secondaires actifs

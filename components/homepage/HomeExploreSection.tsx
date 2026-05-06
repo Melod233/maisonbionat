@@ -161,6 +161,14 @@ const metaClusters: MetaCluster[] = [
           { label: "Poêle à bois et air intérieur",   href: "/chauffage-sain/poele-bois-air-interieur/" },
         ],
       },
+      {
+        id: "jardin",
+        silo: "Jardin",
+        siloHref: "/jardin/",
+        topics: [
+          { label: "Pesticides : alternatives concrètes", href: "/jardin/pesticides-jardin-alternatives/" },
+        ],
+      },
     ],
   },
 ];

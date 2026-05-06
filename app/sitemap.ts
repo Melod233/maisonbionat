@@ -665,6 +665,20 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.7,
     },
 
+    // ── Jardin ───────────────────────────────────────────────
+    {
+      url: `${BASE}/jardin/`,
+      lastModified: SILOS_UPDATED,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: `${BASE}/jardin/pesticides-jardin-alternatives/`,
+      lastModified: PAGES_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+
     // ── Avis ─────────────────────────────────────────────────
     {
       url: `${BASE}/avis/`,
