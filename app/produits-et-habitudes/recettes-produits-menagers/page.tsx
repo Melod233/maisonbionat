@@ -10,16 +10,16 @@ import PillarFaqSection from "@/components/pillar/PillarFaqSection";
 import RelatedContent from "@/components/pillar/RelatedContent";
 
 export const metadata: Metadata = {
-  title: "Recettes de produits ménagers maison : formules testées et expliquées",
+  title: "Recettes de produits ménagers maison : formules avec proportions exactes",
   description:
-    "Nettoyant multi-surfaces, nettoyant WC, vitres, dégraissant, assouplissant : les recettes de produits ménagers maison au bicarbonate, vinaigre blanc et savon de Marseille. Formules précises.",
+    "Nettoyant multi-surfaces, WC, vitres, dégraissant cuisine, assouplissant, four : les recettes de produits ménagers maison avec dosages précis au bicarbonate, vinaigre blanc, savon noir et cristaux de soude.",
   alternates: {
     canonical: "https://www.maisonbionat.fr/produits-et-habitudes/recettes-produits-menagers/",
   },
   openGraph: {
-    title: "Recettes de produits ménagers maison : formules testées et expliquées",
+    title: "Recettes de produits ménagers maison : formules avec proportions exactes",
     description:
-      "Nettoyant multi-surfaces, nettoyant WC, vitres, dégraissant, assouplissant : les recettes de produits ménagers maison au bicarbonate, vinaigre blanc et savon de Marseille. Formules précises.",
+      "Nettoyant multi-surfaces, WC, vitres, dégraissant cuisine, assouplissant, four : les recettes de produits ménagers maison avec dosages précis.",
     url: "https://www.maisonbionat.fr/produits-et-habitudes/recettes-produits-menagers/",
   },
 };
@@ -28,7 +28,7 @@ export default function RecettesProduitsPage() {
   const breadcrumbJsonLd = getBreadcrumbJsonLd([
     { name: "Accueil", href: "/" },
     { name: "Produits et habitudes", href: "/produits-et-habitudes/" },
-    { name: "Recettes de produits ménagers maison : formules testées et expliquées", href: "https://www.maisonbionat.fr/produits-et-habitudes/recettes-produits-menagers/" },
+    { name: "Recettes de produits ménagers maison : formules avec proportions exactes", href: "https://www.maisonbionat.fr/produits-et-habitudes/recettes-produits-menagers/" },
   ]);
   return (
     <>
@@ -41,7 +41,7 @@ export default function RecettesProduitsPage() {
         parentHref="/produits-et-habitudes/"
         tag="Guide pratique"
         title="Recettes de produits ménagers maison : formules précises pour chaque usage"
-        quickAnswer="Bicarbonate de soude, vinaigre blanc, savon de Marseille et cristaux de soude permettent de fabriquer des nettoyants efficaces pour presque tous les usages du quotidien. Les recettes maison réduisent les émissions de composés organiques volatils (COV) dans le logement et coûtent nettement moins cher que les produits du commerce. Ce guide donne les formules exactes, les proportions et les précautions à connaître."
+        quickAnswer="Bicarbonate de soude, vinaigre blanc, savon noir et cristaux de soude permettent de fabriquer des nettoyants efficaces pour presque tous les usages du quotidien. Cette page rassemble les formules exactes, avec proportions, contenants et précautions. Pour le contexte (quel produit choisir selon la surface, dans quel ordre substituer), voyez la page alternatives."
         stats={[
           { value: "4", label: "ingrédients de base couvrent la quasi-totalité des usages ménagers" },
           { value: "-80 %", label: "d'émissions de COV estimées par rapport aux nettoyants parfumés en spray (ADEME/PRESSENS)" },
@@ -248,11 +248,6 @@ export default function RecettesProduitsPage() {
             label: "Mélanger vinaigre et bicarbonate dans un flacon fermé",
             explanation:
               "La réaction entre l'acide acétique (vinaigre) et le bicarbonate produit du CO2. Dans un flacon fermé, la pression monte et peut provoquer une projection ou une ouverture brutale du flacon. Ces deux produits peuvent être utilisés l'un après l'autre sur une surface, mais jamais mélangés dans un contenant fermé.",
-          },
-          {
-            label: "Utiliser le vinaigre sur le marbre, la pierre calcaire ou le ciment",
-            explanation:
-              "Le vinaigre attaque et ternit irréversiblement le marbre, la pierre calcaire, certains joints et les plans de travail en béton ciré. Pour ces surfaces, utiliser uniquement de l'eau et du savon noir dilué, ou un nettoyant au pH neutre.",
           },
           {
             label: "Appliquer des cristaux de soude sans gants ni protection",

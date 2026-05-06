@@ -278,28 +278,35 @@ export default function ReduireProduitsChimiquesPage() {
       />
 
       <RelatedContent
-        title="Aller plus loin sur ce sujet"
+        title="Pour passer à l'action"
         items={[
+          {
+            tag: "Produits et habitudes",
+            title: "Choisir des produits ménagers du commerce plus sains",
+            description:
+              "Si vous préférez continuer à acheter, ce qu'il faut regarder sur l'étiquette : labels Écolabel, NF Environnement, ingrédients à éviter.",
+            href: "/produits-et-habitudes/produits-menagers-sains/",
+          },
+          {
+            tag: "Produits et habitudes",
+            title: "Alternatives : quel produit naturel pour quel usage",
+            description:
+              "Bicarbonate, vinaigre, savon noir : le guide de décision par surface. Ce qui remplace quoi, sans entrer dans les recettes détaillées.",
+            href: "/produits-et-habitudes/alternatives-produits-menagers/",
+          },
+          {
+            tag: "Produits et habitudes",
+            title: "Recettes maison avec proportions exactes",
+            description:
+              "Quand vous avez décidé de fabriquer : 8 formules opérationnelles pour le quotidien (multi-surfaces, WC, vitres, four, sol).",
+            href: "/produits-et-habitudes/recettes-produits-menagers/",
+          },
           {
             tag: "Produits et habitudes",
             title: "Produits ménagers irritants",
             description:
               "Comprendre les mécanismes d'irritation des produits du quotidien et identifier les substitutions les plus utiles.",
             href: "/produits-et-habitudes/produits-menagers-irritants/",
-          },
-          {
-            tag: "Air intérieur",
-            title: "Odeurs persistantes dans la maison",
-            description:
-              "Les sprays parfumants masquent les odeurs sans traiter la source. Comment identifier et traiter la vraie cause.",
-            href: "/air-interieur/odeurs-persistantes-maison/",
-          },
-          {
-            tag: "Air intérieur",
-            title: "Air intérieur pollué",
-            description:
-              "Les produits ménagers sont l'une des cinq sources principales de polluants intérieurs. Vue d'ensemble et solutions.",
-            href: "/air-interieur/air-interieur-pollue/",
           },
         ]}
       />

@@ -10,16 +10,16 @@ import PillarFaqSection from "@/components/pillar/PillarFaqSection";
 import RelatedContent from "@/components/pillar/RelatedContent";
 
 export const metadata: Metadata = {
-  title: "Alternatives aux produits ménagers conventionnels : le guide par usage",
+  title: "Alternatives aux produits ménagers : quel produit pour quel usage",
   description:
-    "Bicarbonate, vinaigre blanc, savon noir, savon de Marseille : quelles alternatives aux produits ménagers classiques, par type de surface et d'usage. Guide pratique sans greenwashing.",
+    "Bicarbonate, vinaigre blanc, savon noir, savon de Marseille : quel produit naturel remplace quoi, surface par surface. Le guide de décision pour substituer ses produits ménagers, sans greenwashing.",
   alternates: {
     canonical: "https://www.maisonbionat.fr/produits-et-habitudes/alternatives-produits-menagers/",
   },
   openGraph: {
-    title: "Alternatives aux produits ménagers conventionnels : le guide par usage",
+    title: "Alternatives aux produits ménagers : quel produit pour quel usage",
     description:
-      "Bicarbonate, vinaigre blanc, savon noir, savon de Marseille : quelles alternatives aux produits ménagers classiques, par type de surface et d'usage. Guide pratique sans greenwashing.",
+      "Bicarbonate, vinaigre blanc, savon noir, savon de Marseille : quel produit naturel remplace quoi, surface par surface. Le guide de décision pour substituer ses produits ménagers.",
     url: "https://www.maisonbionat.fr/produits-et-habitudes/alternatives-produits-menagers/",
   },
 };
@@ -28,7 +28,7 @@ export default function AlternativesProduitsPage() {
   const breadcrumbJsonLd = getBreadcrumbJsonLd([
     { name: "Accueil", href: "/" },
     { name: "Produits et habitudes", href: "/produits-et-habitudes/" },
-    { name: "Alternatives aux produits ménagers conventionnels : le guide par usage", href: "https://www.maisonbionat.fr/produits-et-habitudes/alternatives-produits-menagers/" },
+    { name: "Alternatives aux produits ménagers : quel produit pour quel usage", href: "https://www.maisonbionat.fr/produits-et-habitudes/alternatives-produits-menagers/" },
   ]);
   return (
     <>
@@ -41,7 +41,7 @@ export default function AlternativesProduitsPage() {
         parentHref="/produits-et-habitudes/"
         tag="Guide pratique"
         title="Alternatives aux produits ménagers : ce qui remplace quoi, surface par surface"
-        quickAnswer="Bicarbonate de soude, vinaigre blanc, savon noir et savon de Marseille suffisent pour la grande majorité des nettoyages courants. Ces produits émettent peu ou pas de composés organiques volatils (COV), contrairement aux nettoyants parfumés en spray. Ce guide vous indique, usage par usage, quel produit utilise, comment et dans quelle concentration."
+        quickAnswer="Bicarbonate de soude, vinaigre blanc, savon noir et savon de Marseille suffisent pour la grande majorité des nettoyages courants. Ces produits émettent peu ou pas de composés organiques volatils (COV), contrairement aux nettoyants parfumés en spray. Cette page vous indique, usage par usage, quel produit choisir et pourquoi. Pour les formules détaillées avec proportions exactes, voyez la page recettes."
         stats={[
           { value: "3", label: "ingrédients couvrent environ 80 % des usages ménagers courants" },
           { value: "COV", label: "émis en grande quantité par les sprays nettoyants parfumés (ADEME/PRESSENS)" },
@@ -194,12 +194,6 @@ export default function AlternativesProduitsPage() {
             effort: "Moins de 5 €",
           },
           {
-            label: "Préparer un spray multi-surfaces maison",
-            description:
-              "1 litre d'eau, 1 cuillère à soupe de savon noir liquide, éventuellement 20 cl de vinaigre blanc. Mettre en flacon pompe (pas aérosol). Utiliser sur sols, plans de travail, portes et surfaces plastiques.",
-            effort: "10 minutes, matériel simple",
-          },
-          {
             label: "Adopter le chiffon microfibre pour les vitres et surfaces lisses",
             description:
               "Un chiffon microfibre humide nettoie les vitres, inox et surfaces lisses sans aucun produit. Il réduit de 80 % la quantité de nettoyant nécessaire. Lavable à 60 °C et réutilisable des centaines de fois.",
@@ -220,43 +214,37 @@ export default function AlternativesProduitsPage() {
             effort: "5 à 10 € au total",
           },
           {
-            label: "Compléter avec du cristaux de soude pour le dégraissage intense",
+            label: "Compléter avec des cristaux de soude pour les usages intenses",
             description:
-              "Les cristaux de soude (carbonate de sodium) sont utiles pour les graisses tenaces (four, hotte), le détartrage profond et la désinfection. Utiliser avec des gants, ne pas respirer directement lors de la préparation. Efficace en solution à 10 % dans l'eau chaude.",
+              "Les cristaux de soude (carbonate de sodium) sont utiles pour les graisses tenaces (four, hotte) et le détartrage profond. Utiliser avec des gants. Plus alcalins que le bicarbonate, ils ne s'achètent qu'en complément quand les autres produits ne suffisent pas.",
             effort: "Moins d'1 € les 500 g",
-          },
-          {
-            label: "Éviter les mélanges inutiles : un produit par usage",
-            description:
-              "Mélanger bicarbonate et vinaigre ensemble dans un même récipient produit une réaction acide-base qui neutralise les deux produits. Chacun s'utilise séparément et consécutivement si besoin, jamais simultanément en mélange.",
-            effort: "Connaissance, habitude",
           },
         ]}
       />
 
       <ErrorCallout
         id="eviter"
-        title="Les erreurs fréquentes avec les alternatives ménagères."
+        title="Les erreurs fréquentes dans la démarche de substitution."
         errors={[
           {
-            label: "Mélanger bicarbonate et vinaigre dans le même contenant",
+            label: "Vouloir tout remplacer en une seule fois",
             explanation:
-              "Le bicarbonate (base) et le vinaigre (acide) se neutralisent mutuellement quand on les mélange. La mousse produite est de l'eau et du CO2 : spectaculaire, mais les deux produits perdent leur efficacité. Ils s'utilisent séparément.",
+              "Substituer simultanément tous les produits du foyer génère une charge organisationnelle (achats, apprentissage, gestion des contenants) qui décourage. Mieux vaut commencer par les sprays parfumés et désodorisants — les plus émissifs — puis avancer pas à pas sur 2 à 3 mois.",
           },
           {
-            label: "Croire que 'naturel' signifie sans risque à n'importe quelle dose",
+            label: "Croire que « naturel » signifie sans risque à n'importe quelle dose",
             explanation:
-              "Le bicarbonate peut endommager les surfaces délicates (parquet huilé, aluminium anodisé, acier inoxydable brossé) s'il est utilisé pur en abrasif. Le vinaigre pur attaque le marbre, le calcaire et certains joints de salle de bain. Toujours diluer et tester sur une petite surface.",
+              "Le bicarbonate peut endommager les surfaces délicates (parquet huilé, aluminium anodisé, acier inoxydable brossé) s'il est utilisé pur en abrasif. Le vinaigre pur attaque le marbre, le calcaire et certains joints. Toujours diluer et tester sur une petite surface avant un usage généralisé.",
           },
           {
-            label: "Utiliser le vinaigre sur le marbre ou la pierre naturelle",
+            label: "Acheter en parapharmacie ou magasin bio premium",
             explanation:
-              "Le vinaigre est acide et réagit avec le calcaire contenu dans le marbre et la pierre naturelle. Il les attaque et les ternit de façon irréversible. Pour ces surfaces, utilisez uniquement de l'eau légèrement savonneuse.",
+              "Bicarbonate, vinaigre blanc, savon noir et cristaux de soude sont vendus en grande surface ou en droguerie pour quelques euros. Les versions « bio » ou « premium » en magasin spécialisé contiennent souvent les mêmes molécules à un tarif 3 à 5 fois supérieur.",
           },
           {
             label: "Supposer que les huiles essentielles parfument sans nuire",
             explanation:
-              "Ajouter des huiles essentielles aux préparations maison n'améliore pas leur efficacité et introduit des COV naturels. Certaines huiles (eucalyptus, menthe, clou de girofle) sont irritantes pour les voies respiratoires et déconseillées en présence d'enfants de moins de 3 ans.",
+              "Ajouter des huiles essentielles aux préparations n'améliore pas leur efficacité et introduit des COV naturels. Certaines huiles (eucalyptus, menthe, clou de girofle) sont irritantes pour les voies respiratoires et déconseillées en présence d'enfants de moins de 3 ans. Le mythe « huile essentielle = sans danger » est tenace.",
           },
         ]}
       />

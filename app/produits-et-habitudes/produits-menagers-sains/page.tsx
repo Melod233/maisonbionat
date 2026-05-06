@@ -270,17 +270,17 @@ export default function ProduitsMenuagersSainsPage() {
         items={[
           {
             tag: "Produits et habitudes",
-            title: "Alternatives aux produits ménagers chimiques",
+            title: "Alternatives : quel produit naturel pour quel usage",
             description:
-              "Si vous souhaitez aller plus loin en remplaçant certains produits du commerce par des alternatives moins chimiques.",
+              "Si vous voulez sortir du commerce : quel produit naturel remplace quoi, surface par surface. Le guide de décision avant les recettes.",
             href: "/produits-et-habitudes/alternatives-produits-menagers/",
           },
           {
             tag: "Produits et habitudes",
-            title: "Produits ménagers irritants",
+            title: "Réduire les produits chimiques : par où commencer",
             description:
-              "Identifier les produits les plus problématiques dans votre logement et leurs alternatives.",
-            href: "/produits-et-habitudes/produits-menagers-irritants/",
+              "La démarche complète si vous voulez engager une transition progressive. Ordre des priorités, motivations et arbitrages.",
+            href: "/produits-et-habitudes/reduire-produits-chimiques-maison/",
           },
           {
             tag: "Produits et habitudes",
