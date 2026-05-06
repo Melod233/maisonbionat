@@ -135,7 +135,7 @@ export default function HumiditeMaisonPage() {
             action: "Limiter les apports de vapeur",
             description:
               "Faites sécher le linge à l'extérieur ou dans une pièce ventilée. Couvrez les casseroles. Évitez les bacs d'eau stagnante. Ces gestes simples réduisent significativement l'hygrométrie.",
-            href: "/humidite-maison/sources-humidite-interieure/",
+            href: "/humidite-maison/problemes-humidite/#sources",
           },
         ]}
       />
@@ -200,54 +200,48 @@ export default function HumiditeMaisonPage() {
           },
           {
             number: "05",
-            title: "Sources d'humidité dans la maison",
-            description: "Les activités qui produisent de la vapeur d'eau et comment quantifier chaque source.",
-            href: "/humidite-maison/sources-humidite-interieure/",
-          },
-          {
-            number: "06",
             title: "Ventilation et maîtrise de l'humidité",
             description: "Le rôle de la VMC dans le contrôle de l'humidité intérieure et comment l'optimiser.",
             href: "/humidite-maison/ventilation-humidite/",
           },
           {
-            number: "07",
+            number: "06",
             title: "Diagnostic : identifier le type d'humidité",
             description: "Comment distinguer condensation, infiltration et remontées capillaires pour agir efficacement.",
             href: "/humidite-maison/diagnostic-humidite/",
           },
           {
-            number: "08",
+            number: "07",
             title: "Humidité dans la maison : causes, diagnostic et solutions",
             description: "Condensation sur les vitres, murs humides, air lourd : identifier la cause exacte de l'humidité dans votre logement et agir avec la bonne solution.",
             href: "/humidite-maison/problemes-humidite/",
           },
           {
-            number: "09",
+            number: "08",
             title: "Salpêtre sur les murs : reconnaître, traiter et prévenir",
             description: "Reconnaître le salpêtre, le distinguer de la moisissure et de l'efflorescence cimentaire, identifier les remontées capillaires et choisir un traitement durable.",
             href: "/humidite-maison/salpetre-murs/",
           },
           {
-            number: "10",
+            number: "09",
             title: "Taux d'humidité idéal : valeurs cibles et hygromètre",
             description: "Plage 40-60 % recommandée par l'ADEME, repères pièce par pièce, saisonnalité et corrections concrètes en cas de taux trop bas ou trop élevé.",
             href: "/humidite-maison/taux-humidite-ideal/",
           },
           {
-            number: "11",
+            number: "10",
             title: "Déshumidificateur : quand il sert, quand il ne sert à rien",
             description: "Avant d'acheter, savoir si un déshumidificateur résout vraiment le problème : compresseur ou absorption, dimensionnement, et limites face à l'humidité structurelle.",
             href: "/humidite-maison/deshumidificateur-maison/",
           },
           {
-            number: "12",
+            number: "11",
             title: "Remontées capillaires : reconnaître et traiter durablement",
             description: "Humidité ascensionnelle dans les murs anciens, signes caractéristiques (auréole 0,80-1,50 m, salpêtre), solutions hiérarchisées : injection de résine, drainage, électro-osmose.",
             href: "/humidite-maison/remontees-capillaires/",
           },
           {
-            number: "13",
+            number: "12",
             title: "Condensation sur les fenêtres : causes et solutions durables",
             description: "Buée matinale, point de rosée, ventilation : pourquoi la fenêtre n'est presque jamais la cause et comment agir efficacement sur l'humidité produite.",
             href: "/humidite-maison/condensation-fenetre/",

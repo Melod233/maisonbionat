@@ -56,7 +56,7 @@ const metaClusters: MetaCluster[] = [
           { label: "Moisissures",               href: "/humidite-maison/moisissures-maison/" },
           { label: "Chambre humide",            href: "/humidite-maison/chambre-humide/" },
           { label: "Réduire l'humidité",        href: "/humidite-maison/reduire-humidite-maison/" },
-          { label: "Sources d'humidité",        href: "/humidite-maison/sources-humidite-interieure/" },
+          { label: "Sources d'humidité",        href: "/humidite-maison/problemes-humidite/#sources" },
           { label: "Ventilation et humidité",   href: "/humidite-maison/ventilation-humidite/" },
           { label: "Taux d'humidité idéal",     href: "/humidite-maison/taux-humidite-ideal/" },
           { label: "Salpêtre sur les murs",     href: "/humidite-maison/salpetre-murs/" },
@@ -90,7 +90,7 @@ const metaClusters: MetaCluster[] = [
         topics: [
           { label: "Diagnostic pré-travaux",    href: "/renovation-saine/diagnostic-renovation/" },
           { label: "Isolation et ventilation",  href: "/renovation-saine/isolation-ventilation/" },
-          { label: "Isolants biosourcés",       href: "/renovation-saine/isolants-biosources/" },
+          { label: "Choisir son isolation",     href: "/renovation-saine/choisir-isolation-renovation/" },
           { label: "VMC double flux",           href: "/renovation-saine/vmc-double-flux/" },
           { label: "Label A+ matériaux",        href: "/renovation-saine/label-a-plus-travaux/" },
           { label: "Aérer après travaux",       href: "/renovation-saine/aerer-apres-travaux/" },

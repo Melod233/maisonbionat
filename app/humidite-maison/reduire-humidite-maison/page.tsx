@@ -287,7 +287,7 @@ export default function ReduireHumiditeMaisonPage() {
             title: "Sources d'humidité dans la maison",
             description:
               "Quantifier précisément chaque source de vapeur pour savoir sur laquelle agir en priorité.",
-            href: "/humidite-maison/sources-humidite-interieure/",
+            href: "/humidite-maison/problemes-humidite/#sources",
           },
           {
             tag: "Humidité maison",

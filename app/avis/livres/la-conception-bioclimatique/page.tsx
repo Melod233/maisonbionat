@@ -40,11 +40,13 @@ export const metadata: Metadata = {
 };
 
 export default function LaConceptionBioclimatiquePage() {
+  const reviewHref = `/avis/livres/${review.slug}/`;
+
   const breadcrumbItems = getReviewBreadcrumbs(
     review.categoryLabel,
     review.categoryHref,
     review.bookTitle,
-    `/livres-eco-construction/${review.slug}/`
+    reviewHref
   );
 
   const breadcrumbJsonLd = getBreadcrumbJsonLd(breadcrumbItems);
@@ -56,7 +58,7 @@ export default function LaConceptionBioclimatiquePage() {
     isbn: review.isbn,
     globalRating: review.globalRating,
     reviewBody: review.verdictSummary,
-    pageUrl: `/livres-eco-construction/${review.slug}/`,
+    pageUrl: reviewHref,
   });
 
   return (
@@ -70,7 +72,6 @@ export default function LaConceptionBioclimatiquePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(bookReviewJsonLd) }}
       />
 
-      {/* ① Hero éditorial */}
       <ReviewHero
         categoryLabel={review.categoryLabel}
         categoryHref={review.categoryHref}
@@ -90,7 +91,6 @@ export default function LaConceptionBioclimatiquePage() {
         ]}
       />
 
-      {/* ② Verdict rapide */}
       <ReviewVerdict
         id="verdict"
         bookTitle={review.bookTitle}
@@ -100,16 +100,13 @@ export default function LaConceptionBioclimatiquePage() {
         keyTakeaway={review.verdictKeyTakeaway}
       />
 
-      {/* ③ Ce que le livre apporte */}
       <ReviewContributions id="apports" contributions={review.contributions} />
 
-      {/* ④ Points forts / Limites */}
       <ReviewStrengthsLimitations
         strengths={review.strengths}
         limitations={review.limitations}
       />
 
-      {/* ⑤ Pour qui */}
       <ReviewAudience
         id="pour-qui"
         bookTitle={review.bookTitle}
@@ -118,26 +115,21 @@ export default function LaConceptionBioclimatiquePage() {
         projectStage={review.audienceProjectStage}
       />
 
-      {/* ⑥ Dans le détail */}
       <ReviewDetails id="analyse" bookTitle={review.bookTitle} details={review.details} />
 
-      {/* ⑦ Note éditoriale */}
       <ReviewQuote id="note" editorialNote={review.editorialNote} />
 
-      {/* ⑧ Notation */}
       <ReviewRating
         globalRating={review.globalRating}
         ratingItems={review.ratingItems}
       />
 
-      {/* ⑨ FAQ */}
       <PillarFaqSection
         id="faq"
         title={`Questions fréquentes sur ${review.bookTitle}`}
         items={review.faq}
       />
 
-      {/* ⑩ Contenus liés */}
       <RelatedContent
         title="Aller plus loin sur ces sujets"
         items={review.relatedLinks}

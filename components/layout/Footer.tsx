@@ -13,6 +13,9 @@ const siloLinks = [
   { label: "Chauffage sain",        href: "/chauffage-sain/" },
 ];
 
+// Liens secondaires actifs
+const secondaryLinks = [{ label: "Avis et lectures", href: "/avis/" }];
+
 // Pages à venir — affichées en texte non cliquable jusqu'à leur création
 const pendingLabels = ["À propos", "Contact", "Mentions légales"];
 
@@ -116,10 +119,15 @@ export default function Footer() {
             </ul>
           </nav>
 
-          {/* Le site — texte non cliquable jusqu'à la création des pages */}
+          {/* Le site */}
           <div>
             <NavLabel>Le site</NavLabel>
             <ul>
+              {secondaryLinks.map((link) => (
+                <li key={link.href}>
+                  <FooterLink href={link.href}>{link.label}</FooterLink>
+                </li>
+              ))}
               {pendingLabels.map((label) => (
                 <li key={label}>
                   <span className="block py-2.5 lg:py-1.5 text-[13px] text-ink-dim leading-snug opacity-40">

@@ -311,12 +311,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.7,
     },
     {
-      url: `${BASE}/humidite-maison/sources-humidite-interieure/`,
-      lastModified: PAGES_UPDATED,
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    {
       url: `${BASE}/humidite-maison/ventilation-humidite/`,
       lastModified: PAGES_UPDATED,
       changeFrequency: "monthly",
@@ -571,7 +565,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.7,
     },
     {
-      url: `${BASE}/renovation-saine/isolants-biosources/`,
+      url: `${BASE}/renovation-saine/choisir-isolation-renovation/`,
       lastModified: PAGES_UPDATED,
       changeFrequency: "monthly",
       priority: 0.7,
@@ -665,15 +659,27 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.7,
     },
 
-    // ── Livres éco-construction (2) ──────────────────────────
+    // ── Avis ─────────────────────────────────────────────────
     {
-      url: `${BASE}/livres-eco-construction/la-conception-bioclimatique/`,
+      url: `${BASE}/avis/`,
+      lastModified: SILOS_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.6,
+    },
+    {
+      url: `${BASE}/avis/livres/`,
+      lastModified: SILOS_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.6,
+    },
+    {
+      url: `${BASE}/avis/livres/la-conception-bioclimatique/`,
       lastModified: PAGES_UPDATED,
       changeFrequency: "monthly",
       priority: 0.6,
     },
     {
-      url: `${BASE}/livres-eco-construction/manuel-architecture-naturelle/`,
+      url: `${BASE}/avis/livres/manuel-architecture-naturelle/`,
       lastModified: PAGES_UPDATED,
       changeFrequency: "monthly",
       priority: 0.6,

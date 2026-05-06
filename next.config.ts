@@ -34,6 +34,59 @@ const nextConfig: NextConfig = {
         destination: "/piece-par-piece/chambre-enfant-saine/",
         permanent: true,
       },
+      // Migration /livres-eco-construction/ -> /avis/livres/
+      {
+        source: "/livres-eco-construction",
+        destination: "/avis/livres/",
+        permanent: true,
+      },
+      {
+        source: "/livres-eco-construction/",
+        destination: "/avis/livres/",
+        permanent: true,
+      },
+      {
+        source: "/livres-eco-construction/la-conception-bioclimatique",
+        destination: "/avis/livres/la-conception-bioclimatique/",
+        permanent: true,
+      },
+      {
+        source: "/livres-eco-construction/la-conception-bioclimatique/",
+        destination: "/avis/livres/la-conception-bioclimatique/",
+        permanent: true,
+      },
+      {
+        source: "/livres-eco-construction/manuel-architecture-naturelle",
+        destination: "/avis/livres/manuel-architecture-naturelle/",
+        permanent: true,
+      },
+      {
+        source: "/livres-eco-construction/manuel-architecture-naturelle/",
+        destination: "/avis/livres/manuel-architecture-naturelle/",
+        permanent: true,
+      },
+      // Zone E : fusion sources-humidite-interieure -> problemes-humidite
+      {
+        source: "/humidite-maison/sources-humidite-interieure",
+        destination: "/humidite-maison/problemes-humidite/",
+        permanent: true,
+      },
+      {
+        source: "/humidite-maison/sources-humidite-interieure/",
+        destination: "/humidite-maison/problemes-humidite/",
+        permanent: true,
+      },
+      // Zone B : fusion isolants-biosources (renovation -> materiaux)
+      {
+        source: "/renovation-saine/isolants-biosources",
+        destination: "/materiaux-sains/isolants-biosources/",
+        permanent: true,
+      },
+      {
+        source: "/renovation-saine/isolants-biosources/",
+        destination: "/materiaux-sains/isolants-biosources/",
+        permanent: true,
+      },
     ];
   },
 

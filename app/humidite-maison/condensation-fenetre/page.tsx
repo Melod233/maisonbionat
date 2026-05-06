@@ -315,7 +315,7 @@ export default function CondensationFenetrePage() {
             title: "Sources d'humidité dans la maison",
             description:
               "Quantification des sources quotidiennes (cuisson, douche, séchage, respiration) et hiérarchisation des leviers d'action.",
-            href: "/humidite-maison/sources-humidite-interieure/",
+            href: "/humidite-maison/problemes-humidite/#sources",
           },
           {
             tag: "Humidité maison",

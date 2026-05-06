@@ -279,7 +279,7 @@ export default function SecherLingeInterieurPage() {
             title: "Sources d'humidité dans la maison",
             description:
               "Le séchage du linge est l'une des principales sources de vapeur dans un logement. Vue d'ensemble de toutes les contributions quotidiennes.",
-            href: "/humidite-maison/sources-humidite-interieure/",
+            href: "/humidite-maison/problemes-humidite/#sources",
           },
           {
             tag: "Humidité maison",

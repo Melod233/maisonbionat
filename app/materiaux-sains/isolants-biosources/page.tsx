@@ -307,10 +307,10 @@ export default function IsolantsSourcesPage() {
           },
           {
             tag: "Rénovation saine",
-            title: "Isolants biosourcés en rénovation",
+            title: "Choisir et hiérarchiser ses travaux d'isolation",
             description:
-              "Intégrer des isolants biosourcés dans un projet de rénovation : contraintes techniques, aides disponibles et priorités.",
-            href: "/renovation-saine/isolants-biosources/",
+              "Quel poste isoler en priorité, ITE ou ITI, ordre des travaux et aides 2026 : la décision en amont du choix de matériau.",
+            href: "/renovation-saine/choisir-isolation-renovation/",
           },
           {
             tag: "Matériaux sains",

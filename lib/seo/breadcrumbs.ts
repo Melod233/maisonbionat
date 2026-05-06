@@ -14,7 +14,7 @@ export function getSiloBreadcrumbs(siloName: string, siloHref: string): Breadcru
 }
 
 /**
- * Génère les breadcrumbs pour une page d'avis (ex: /livres-eco-construction/la-conception-bioclimatique/).
+ * Génère les breadcrumbs pour une page d'avis livre (ex: /avis/livres/la-conception-bioclimatique/).
  */
 export function getReviewBreadcrumbs(
   categoryLabel: string,
@@ -24,6 +24,7 @@ export function getReviewBreadcrumbs(
 ): BreadcrumbItem[] {
   return [
     { name: "Accueil", href: "/" },
+    { name: "Avis", href: "/avis/" },
     { name: categoryLabel, href: categoryHref },
     { name: reviewLabel, href: reviewHref },
   ];

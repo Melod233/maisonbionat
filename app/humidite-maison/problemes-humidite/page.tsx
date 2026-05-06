@@ -52,6 +52,7 @@ export default function HumiditeDansLaMaisonPage() {
           { id: "diagnostic", label: "Identifier le type d'humidité" },
           { id: "signes", label: "Signes à reconnaître" },
           { id: "causes", label: "Causes fréquentes" },
+          { id: "sources", label: "Quantifier les sources" },
           { id: "actions", label: "Que faire" },
           { id: "eviter", label: "Erreurs à éviter" },
           { id: "faq", label: "Questions" },
@@ -167,6 +168,49 @@ export default function HumiditeDansLaMaisonPage() {
             cause: "Remontées capillaires",
             explanation:
               "Dans les maisons anciennes sans barrière d'étanchéité en pied de mur, l'eau du sol remonte dans la maçonnerie par capillarité. Les murs restent humides en permanence en bas, souvent avec des efflorescences blanches.",
+            frequency: "moins fréquent",
+          },
+        ]}
+      />
+
+      <IssueCauses
+        id="sources"
+        title="Quantifier les sources de vapeur au quotidien."
+        subtitle="Pour prioriser les bons gestes, il aide de connaître la contribution réelle de chaque activité. Voici les ordres de grandeur généralement admis."
+        causes={[
+          {
+            number: "01",
+            cause: "Séchage du linge à l'intérieur",
+            explanation:
+              "C'est souvent la source la plus sous-estimée. Une charge de lessive standard libère 1 à 2 litres de vapeur en séchant. Dans une pièce fermée sans ventilation, cette vapeur peut maintenir l'hygrométrie au-dessus de 65 % pendant plusieurs heures.",
+            frequency: "très fréquent",
+          },
+          {
+            number: "02",
+            cause: "Douches et bains",
+            explanation:
+              "Une douche chaude de 5 à 10 minutes libère 2 à 3 litres de vapeur. Dans un foyer de quatre personnes avec deux douches par jour, cela représente 4 à 6 litres quotidiens : une contribution majeure si la salle de bain est mal ventilée.",
+            frequency: "très fréquent",
+          },
+          {
+            number: "03",
+            cause: "Respiration et transpiration des occupants",
+            explanation:
+              "Chaque personne expire environ 40 grammes de vapeur par heure au repos, davantage en activité. La nuit, dans une chambre fermée, près d'un litre par personne s'ajoute à l'air ambiant. Un foyer de quatre personnes dépasse 3 litres par jour rien que par la respiration.",
+            frequency: "très fréquent",
+          },
+          {
+            number: "04",
+            cause: "Cuisson et préparation des repas",
+            explanation:
+              "Bouillir de l'eau, cuisiner à la vapeur, mijoter sans couvercle : chaque repas chaud libère environ 1 litre de vapeur. L'activation systématique de la hotte aspirante pendant la cuisson est le geste le plus efficace pour limiter cette source.",
+            frequency: "fréquent",
+          },
+          {
+            number: "05",
+            cause: "Plantes d'intérieur en grand nombre",
+            explanation:
+              "Une plante seule contribue peu, mais une concentration importante (dix plantes ou plus) dans une pièce peu ventilée peut élever l'hygrométrie de plusieurs points par évapotranspiration. L'effet est plus marqué après l'arrosage.",
             frequency: "moins fréquent",
           },
         ]}

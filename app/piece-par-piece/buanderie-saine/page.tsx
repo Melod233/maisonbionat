@@ -322,7 +322,7 @@ export default function BuanderieSainePage() {
             title: "Sources d'humidité dans la maison",
             description:
               "Quantification de la part du séchage du linge dans le bilan hydrique d'un logement.",
-            href: "/humidite-maison/sources-humidite-interieure/",
+            href: "/humidite-maison/problemes-humidite/#sources",
           },
         ]}
       />

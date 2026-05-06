@@ -302,7 +302,7 @@ export default function SalpetreMursPage() {
             title: "Sources d'humidité intérieure",
             description:
               "Cartographier les voies d'entrée d'eau dans un logement avant de choisir un traitement adapté à chaque cas.",
-            href: "/humidite-maison/sources-humidite-interieure/",
+            href: "/humidite-maison/problemes-humidite/#sources",
           },
           {
             tag: "Humidité maison",

@@ -188,9 +188,9 @@ export default function RenovationSainePage() {
           },
           {
             number: "03",
-            title: "Isolants biosourcés en rénovation",
-            description: "Chanvre, liège, ouate de cellulose, laine de mouton : performances, cas d'usage par poste de travaux et points d'attention pour choisir et faire poser.",
-            href: "/renovation-saine/isolants-biosources/",
+            title: "Choisir et hiérarchiser ses travaux d'isolation",
+            description: "Hiérarchie des déperditions, ITE ou ITI, ordre des travaux, aides 2026 et qualification RGE : décider avant d'engager un artisan.",
+            href: "/renovation-saine/choisir-isolation-renovation/",
           },
           {
             number: "04",

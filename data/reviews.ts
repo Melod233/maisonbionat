@@ -119,9 +119,9 @@ export type Review = {
 
 export const manuelArchitectureNaturelle: Review = {
   slug: "manuel-architecture-naturelle",
-  categorySlug: "livres-eco-construction",
-  categoryLabel: "Livres d'éco-construction",
-  categoryHref: "/livres-eco-construction/",
+  categorySlug: "livres",
+  categoryLabel: "Livres",
+  categoryHref: "/avis/livres/",
   resourceType: "livre",
 
   bookTitle: "Manuel d'architecture naturelle",
@@ -139,7 +139,7 @@ export const manuelArchitectureNaturelle: Review = {
   metaDescription:
     "Avis éditorial complet sur Manuel d'architecture naturelle de David Wright : ce que ce livre fondateur apporte sur le solaire passif, l'architecture vernaculaire et les matériaux naturels, à qui il s'adresse et pourquoi il reste utile.",
   canonicalUrl:
-    "https://www.maisonbionat.fr/livres-eco-construction/manuel-architecture-naturelle/",
+    "https://www.maisonbionat.fr/avis/livres/manuel-architecture-naturelle/",
 
   heroTitle:
     "Manuel d'architecture naturelle : le solaire passif expliqué simplement, appris des traditions vernaculaires",
@@ -338,9 +338,9 @@ export const manuelArchitectureNaturelle: Review = {
 
 export const laConceptionBioclimatique: Review = {
   slug: "la-conception-bioclimatique",
-  categorySlug: "livres-eco-construction",
-  categoryLabel: "Livres d'éco-construction",
-  categoryHref: "/livres-eco-construction/",
+  categorySlug: "livres",
+  categoryLabel: "Livres",
+  categoryHref: "/avis/livres/",
   resourceType: "livre",
 
   bookTitle: "La conception bioclimatique",
@@ -360,7 +360,7 @@ export const laConceptionBioclimatique: Review = {
   metaDescription:
     "Avis éditorial complet sur La conception bioclimatique de Samuel Courgey et Jean-Pierre Oliva : ce que ce livre apporte vraiment, à qui il s'adresse, ses points forts, ses limites et pourquoi il reste une référence en éco-construction.",
   canonicalUrl:
-    "https://www.maisonbionat.fr/livres-eco-construction/la-conception-bioclimatique/",
+    "https://www.maisonbionat.fr/avis/livres/la-conception-bioclimatique/",
 
   heroTitle:
     "La conception bioclimatique : la référence pour concevoir une maison qui travaille avec son environnement",
