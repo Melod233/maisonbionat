@@ -47,24 +47,24 @@ export default function AvisPage() {
             >
               Catégories d'avis
             </h2>
-            <p className="mt-5 text-ink-dim text-[15px] leading-[1.7]">
+            <p className="mt-5 text-ink-muted text-[15px] leading-[1.7]">
               Les avis sont organisés par type de ressource. La section grandit progressivement,
               à mesure que de nouveaux ouvrages et outils sont lus et évalués.
             </p>
           </div>
 
-          <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="mt-12 max-w-2xl">
             <Link
               href="/avis/livres/"
               className="group block rounded-2xl border border-line p-8 transition-colors duration-150 hover:border-accent"
             >
-              <div className="text-[11px] uppercase tracking-[0.12em] text-ink-dim mb-4">
+              <div className="text-[11px] uppercase tracking-[0.12em] text-ink-muted mb-4">
                 Livres
               </div>
               <h3 className="text-[20px] font-semibold text-ink leading-[1.25]">
                 Avis sur les livres d&apos;éco-construction et d&apos;habitat sain
               </h3>
-              <p className="mt-3 text-[14px] text-ink-dim leading-[1.7]">
+              <p className="mt-3 text-[14px] text-ink-muted leading-[1.7]">
                 Conception bioclimatique, architecture naturelle, matériaux,
                 rénovation : ce que chaque ouvrage apporte vraiment et à qui il s&apos;adresse.
               </p>

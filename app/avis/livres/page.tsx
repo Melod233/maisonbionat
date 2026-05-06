@@ -58,7 +58,7 @@ export default function AvisLivresPage() {
             >
               Notre sélection
             </h2>
-            <p className="mt-5 text-ink-dim text-[15px] leading-[1.7]">
+            <p className="mt-5 text-ink-muted text-[15px] leading-[1.7]">
               Chaque livre listé ici a été lu, comparé à ses voisins et resitué dans son
               contexte. Aucun avis de complaisance. Les limites sont énoncées aussi clairement
               que les apports.
@@ -76,7 +76,7 @@ export default function AvisLivresPage() {
                   >
                     <div className="flex gap-5 lg:gap-6 items-start">
                       {book.coverImage && (
-                        <div className="relative w-[88px] lg:w-[110px] aspect-[2/3] shrink-0 overflow-hidden rounded-md bg-surface-2">
+                        <div className="relative w-[88px] lg:w-[110px] aspect-[2/3] shrink-0 overflow-hidden rounded-md bg-light">
                           <Image
                             src={book.coverImage.src}
                             alt={book.coverImage.alt}
@@ -87,13 +87,13 @@ export default function AvisLivresPage() {
                         </div>
                       )}
                       <div className="min-w-0">
-                        <div className="text-[11px] uppercase tracking-[0.12em] text-ink-dim">
+                        <div className="text-[11px] uppercase tracking-[0.12em] text-ink-muted">
                           {book.author}
                         </div>
                         <h3 className="mt-2 text-[18px] lg:text-[20px] font-semibold text-ink leading-[1.25]">
                           {book.bookTitle}
                         </h3>
-                        <p className="mt-3 text-[13px] text-ink-dim leading-[1.65] line-clamp-4">
+                        <p className="mt-3 text-[13px] text-ink-muted leading-[1.65] line-clamp-4">
                           {book.verdictSummary}
                         </p>
                         <div className="mt-5 inline-flex items-center gap-1.5 text-[13px] text-accent">

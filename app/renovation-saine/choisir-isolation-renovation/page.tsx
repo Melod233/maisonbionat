@@ -254,10 +254,10 @@ export default function ChoisirIsolationRenovationPage() {
       />
 
       {/* ── RGE ────────────────────────────────────────────── */}
-      <section id="rge" className="py-16 lg:py-24 bg-surface-2">
+      <section id="rge" className="py-16 lg:py-24 bg-light">
         <div className="site-container">
           <div className="max-w-3xl">
-            <div className="text-[11px] uppercase tracking-[0.12em] text-ink-dim mb-5">
+            <div className="text-[11px] uppercase tracking-[0.12em] text-ink-muted mb-5">
               RGE
             </div>
             <h2
@@ -266,7 +266,7 @@ export default function ChoisirIsolationRenovationPage() {
             >
               La qualification RGE conditionne toutes les aides.
             </h2>
-            <div className="mt-6 space-y-5 text-[15px] text-ink-dim leading-[1.75]">
+            <div className="mt-6 space-y-5 text-[15px] text-ink-muted leading-[1.75]">
               <p>
                 MaPrimeRénov', éco-PTZ, CEE, TVA à 5,5 % : aucune de ces aides n&apos;est accessible sans
                 un artisan disposant d&apos;une qualification RGE (Reconnu Garant de l&apos;Environnement) valide

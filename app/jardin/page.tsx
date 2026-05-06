@@ -114,14 +114,12 @@ export default function JardinPage() {
             action: "Construire un sol vivant : paillage, matière organique, sol couvert",
             description:
               "Couvrir le sol nu avec un paillage organique (feuilles mortes, BRF, paille, tontes séchées) sur 5 à 10 cm. Apporter du compost mûr en surface plutôt que de bêcher. Limiter le travail du sol au strict nécessaire. Effets : moins d'arrosage, moins de désherbage, plus de biodiversité.",
-            href: "/jardin/",
           },
           {
             number: "02",
             action: "Récupérer l'eau de pluie pour l'arrosage",
             description:
               "Une cuve de récupération adaptée à la surface de toiture et aux besoins du jardin réduit fortement la consommation d'eau potable pour l'arrosage. Usage extérieur : aucune démarche. Toiture saine (pas d'amiante ni de plomb) obligatoire.",
-            href: "/jardin/",
           },
           {
             number: "03",
@@ -135,7 +133,6 @@ export default function JardinPage() {
             action: "Composter ses biodéchets de cuisine et de jardin",
             description:
               "Un composteur individuel adapté à la taille du foyer transforme épluchures, marc de café, tontes et feuilles en amendement gratuit pour le jardin. Méthode simple, gain immédiat sur les déchets et la fertilité.",
-            href: "/jardin/",
           },
         ]}
       />
