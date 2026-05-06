@@ -41,7 +41,7 @@ export default function AmeliorerAirMaisonPage() {
         parentHref="/air-interieur/"
         tag="Agir concrètement"
         title="Améliorer l'air de sa maison. Par où commencer vraiment."
-        quickAnswer="Améliorer la qualité de l'air intérieur ne nécessite pas de travaux lourds dans la majorité des cas. Trois axes suffisent pour la plupart des logements : ventiler correctement, réduire les sources d'émission, et choisir de meilleurs matériaux lors des achats ou travaux. L'ordre et la régularité comptent plus que les équipements coûteux."
+        quickAnswer="Améliorer la qualité de l'air intérieur ne nécessite pas de travaux lourds dans la majorité des cas. Trois axes suffisent : ventiler correctement, réduire les sources d'émission, choisir de meilleurs matériaux. Cette page est le pilier transversal qui couvre les trois axes et redirige vers les pages de détail. Pour la technique d'aération pas à pas, voyez bien aérer sa maison. Pour la différence entre aération manuelle et VMC, voyez aération ou ventilation."
         stats={[
           { value: "10 min", label: "d'aération matin et soir suffisent à diviser par 2 la concentration de COV" },
           { value: "6 mois", label: "délai recommandé entre deux nettoyages des bouches VMC" },
@@ -296,24 +296,24 @@ export default function AmeliorerAirMaisonPage() {
         items={[
           {
             tag: "Air intérieur",
-            title: "Les polluants les plus fréquents",
+            title: "Bien aérer sa maison : la technique pas à pas",
             description:
-              "Comprendre quels polluants sont présents chez vous et d'où ils proviennent pour agir sur les bonnes sources.",
-            href: "/air-interieur/polluants-interieurs-frequents/",
+              "Durée, fréquence, courant traversant, par pièce et par saison : la mise en pratique du geste d'aération.",
+            href: "/air-interieur/bien-aerer-maison/",
           },
           {
             tag: "Air intérieur",
-            title: "Aération ou ventilation : quelle différence ?",
+            title: "Aération ou ventilation : quelle différence",
             description:
-              "Deux mécanismes complémentaires que l'on confond souvent. Comprendre leurs rôles respectifs pour combiner les deux efficacement.",
+              "Aération manuelle et VMC : deux mécanismes distincts et complémentaires. La page définition pour ne pas les confondre.",
             href: "/air-interieur/aeration-ou-ventilation/",
           },
           {
-            tag: "Humidité maison",
-            title: "Humidité et moisissures",
+            tag: "Air intérieur",
+            title: "Les polluants intérieurs les plus fréquents",
             description:
-              "L'humidité excessive est l'une des premières causes de dégradation de la qualité de l'air. Identifier et traiter les sources.",
-            href: "/humidite-maison/",
+              "Quels polluants sont présents et d'où ils viennent : la grille de lecture pour cibler les bonnes sources.",
+            href: "/air-interieur/polluants-interieurs-frequents/",
           },
         ]}
       />

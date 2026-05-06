@@ -39,7 +39,7 @@ export default function AerationOuVentilationPage() {
         parentHref="/air-interieur/"
         tag="Comprendre"
         title="Aération ou ventilation : deux approches complémentaires, pas interchangeables."
-        quickAnswer="L'aération est une action humaine volontaire : ouvrir les fenêtres dilue rapidement les polluants accumulés, mais elle est ponctuelle et dépend de vous. La VMC est un système permanent qui assure un débit d'air minimal réglementaire en continu. Les deux sont nécessaires : l'une ne remplace pas l'autre."
+        quickAnswer="L'aération est une action humaine volontaire : ouvrir les fenêtres dilue rapidement les polluants accumulés, mais elle est ponctuelle et dépend de vous. La VMC est un système permanent qui assure un débit d'air minimal réglementaire en continu. Les deux sont nécessaires : l'une ne remplace pas l'autre. Cette page définit et compare les deux. Pour la technique d'aération pas à pas, voyez bien aérer sa maison. Pour la stratégie globale, voyez améliorer l'air de sa maison."
         stats={[
           { value: "10 min", label: "durée minimale d'aération recommandée, deux fois par jour" },
           { value: "24h/24", label: "fonctionnement continu d'une VMC correctement réglée" },

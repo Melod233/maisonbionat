@@ -39,7 +39,7 @@ export default function BienAererMaisonPage() {
         parentHref="/air-interieur/"
         tag="Guide pratique"
         title="Bien aérer sa maison : la méthode efficace, pas juste entrouvrir une fenêtre."
-        quickAnswer="Aérer correctement, c'est créer un courant d'air traversant pendant 10 minutes, deux fois par jour. Ouvrir une seule fenêtre renouvelle peu l'air du logement. La technique, le moment et la durée varient selon les pièces et les saisons, mais le principe reste simple et accessible à tous."
+        quickAnswer="Aérer correctement, c'est créer un courant d'air traversant pendant 10 minutes, deux fois par jour. Ouvrir une seule fenêtre renouvelle peu l'air du logement. La technique, le moment et la durée varient selon les pièces et les saisons. Cette page est le how-to du geste d'aération. Pour comprendre la différence entre aération manuelle et VMC, voyez aération ou ventilation. Pour la stratégie globale qualité de l'air, voyez améliorer l'air de sa maison."
         stats={[
           { value: "10 min", label: "durée minimale recommandée, matin et soir, fenêtres en opposition" },
           { value: "2×/jour", label: "fréquence minimale d'aération pour maintenir une qualité d'air correcte" },
