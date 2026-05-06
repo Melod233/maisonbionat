@@ -633,6 +633,52 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.7,
     },
 
+    // ── Chauffage sain (5) ───────────────────────────────────────
+    {
+      url: `${BASE}/chauffage-sain/`,
+      lastModified: SILOS_UPDATED,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: `${BASE}/chauffage-sain/chauffage-electrique-sain/`,
+      lastModified: PAGES_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: `${BASE}/chauffage-sain/choisir-chauffage-renovation/`,
+      lastModified: PAGES_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: `${BASE}/chauffage-sain/poele-bois-air-interieur/`,
+      lastModified: PAGES_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: `${BASE}/chauffage-sain/pompe-a-chaleur-air-eau/`,
+      lastModified: PAGES_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+
+    // ── Livres éco-construction (2) ──────────────────────────
+    {
+      url: `${BASE}/livres-eco-construction/la-conception-bioclimatique/`,
+      lastModified: PAGES_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.6,
+    },
+    {
+      url: `${BASE}/livres-eco-construction/manuel-architecture-naturelle/`,
+      lastModified: PAGES_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.6,
+    },
+
     // ── Guides WordPress (dynamique) ─────────────────────────
     ...guideEntries,
   ];
