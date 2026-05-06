@@ -296,6 +296,13 @@ export default function LabelAPlusTravauxPage() {
               "Le label A+ limite les émissions à la source ; une VMC double flux évacue ce qui est émis et filtre l'air entrant. Les deux leviers se combinent pour une qualité d'air mesurable.",
             href: "/renovation-saine/vmc-double-flux/",
           },
+          {
+            tag: "Matériaux sains",
+            title: "Tous les labels et certifications du logement",
+            description:
+              "Au-delà du A+ : Écolabel européen, NF Environnement, Greenguard, FSC, Oeko-Tex. Le hub transversal pour distinguer labels fiables et greenwashing.",
+            href: "/materiaux-sains/labels-certifications/",
+          },
         ]}
       />
     </>

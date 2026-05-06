@@ -252,6 +252,12 @@ export default function MateriauxSainsPage() {
             description: "Massif vs contrecollé vs stratifié, choix de la finition (huile, vernis aqueux, cire) et mode de pose : les critères qui pèsent vraiment sur l'air intérieur.",
             href: "/materiaux-sains/parquet-massif-sain/",
           },
+          {
+            number: "14",
+            title: "Labels et certifications : lesquels sont fiables, lesquels sont du greenwashing",
+            description: "Hub transversal : Écolabel européen, NF Environnement, A+, Greenguard, FSC, Ange Bleu, Oeko-Tex, Bâtiment biosourcé. Comment distinguer les labels fiables des mentions marketing.",
+            href: "/materiaux-sains/labels-certifications/",
+          },
         ]}
       />
 

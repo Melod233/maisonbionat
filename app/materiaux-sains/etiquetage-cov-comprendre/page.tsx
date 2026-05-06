@@ -331,6 +331,13 @@ export default function EtiquetageCovComprendrePage() {
               "L'étiquette mesure à 28 jours, mais les émissions continuent. Comprendre le phénomène physique du dégazage et l'accélérer après installation.",
             href: "/materiaux-sains/degazage-materiaux/",
           },
+          {
+            tag: "Matériaux sains",
+            title: "Tous les labels et certifications du logement",
+            description:
+              "Au-delà de l'A+ : le hub transversal des labels fiables (Écolabel européen, NF Environnement, Greenguard, FSC, Oeko-Tex) et des mentions trompeuses à éviter.",
+            href: "/materiaux-sains/labels-certifications/",
+          },
         ]}
       />
     </>

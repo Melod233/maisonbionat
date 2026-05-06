@@ -408,6 +408,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: "monthly",
       priority: 0.7,
     },
+    {
+      url: `${BASE}/materiaux-sains/labels-certifications/`,
+      lastModified: PAGES_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
 
     // ── Produits et habitudes (11) ───────────────────────────
     {
