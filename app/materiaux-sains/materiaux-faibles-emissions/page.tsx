@@ -295,15 +295,15 @@ export default function MateriauxFaiblesEmissionsPage() {
             tag: "Matériaux sains",
             title: "Choisir une peinture plus saine",
             description:
-              "La peinture est le matériau à faibles émissions le plus souvent acheté. Guide pratique pour lire l'étiquette et éviter les pièges.",
+              "Pour la peinture en pot spécifiquement : lecture étiquette, à l'eau vs glycéro, alternatives naturelles.",
             href: "/materiaux-sains/peinture-plus-saine/",
           },
           {
-            tag: "Air intérieur",
-            title: "Polluants intérieurs et formaldéhyde",
+            tag: "Matériaux sains",
+            title: "Finitions murales : peintures, papiers peints, colles, apprêts",
             description:
-              "Les matériaux sont la première source de formaldéhyde dans les logements. Comprendre les niveaux d'exposition et les valeurs de référence.",
-            href: "/air-interieur/",
+              "Au-delà de la peinture seule : les autres produits de finition murale (apprêts, colles, papiers peints, enduits décoratifs) participent aux émissions.",
+            href: "/materiaux-sains/peintures-revetements-faibles-emissions/",
           },
           {
             tag: "Rénovation saine",

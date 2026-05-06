@@ -10,17 +10,17 @@ import PillarFaqSection from "@/components/pillar/PillarFaqSection";
 import RelatedContent from "@/components/pillar/RelatedContent";
 
 export const metadata: Metadata = {
-  title: "Peintures et revêtements à faibles émissions : comprendre le A+",
+  title: "Peintures, papiers peints, colles et apprêts : étiquetage des finitions murales",
   description:
-    "Décret 2011-321, classes A+ à C, COV dans les peintures : comment choisir une peinture ou un revêtement mural qui n'altère pas la qualité de l'air de votre logement.",
+    "Au-delà de la peinture en pot : papiers peints, colles de pose, apprêts et enduits décoratifs participent aux émissions. Comment évaluer l'ensemble des produits d'une finition murale, label A+ et alternatives.",
   alternates: {
     canonical:
       "https://www.maisonbionat.fr/materiaux-sains/peintures-revetements-faibles-emissions/",
   },
   openGraph: {
-    title: "Peintures et revêtements à faibles émissions : comprendre le A+",
+    title: "Peintures, papiers peints, colles et apprêts : étiquetage des finitions murales",
     description:
-      "Décret 2011-321, classes A+ à C, COV dans les peintures : comment choisir une peinture ou un revêtement mural qui n'altère pas la qualité de l'air de votre logement.",
+      "Au-delà de la peinture en pot : papiers peints, colles, apprêts et enduits décoratifs. Comment évaluer l'ensemble des produits d'une finition murale.",
     url: "https://www.maisonbionat.fr/materiaux-sains/peintures-revetements-faibles-emissions/",
   },
 };
@@ -29,7 +29,7 @@ export default function PeinturesRevetementsPage() {
   const breadcrumbJsonLd = getBreadcrumbJsonLd([
     { name: "Accueil", href: "/" },
     { name: "Matériaux sains", href: "/materiaux-sains/" },
-    { name: "Peintures et revêtements à faibles émissions : comprendre le A+", href: "https://www.maisonbionat.fr/materiaux-sains/peintures-revetements-faibles-emissions/" },
+    { name: "Peintures, papiers peints, colles et apprêts : étiquetage des finitions murales", href: "https://www.maisonbionat.fr/materiaux-sains/peintures-revetements-faibles-emissions/" },
   ]);
   return (
     <>
@@ -41,8 +41,8 @@ export default function PeinturesRevetementsPage() {
         parentLabel="Matériaux sains"
         parentHref="/materiaux-sains/"
         tag="Guide pratique"
-        title="Peintures et revêtements muraux : choisir des produits qui n'altèrent pas votre air intérieur"
-        quickAnswer="Les peintures et revêtements muraux font partie des principales sources de composés organiques volatils (COV) dans un logement, surtout dans les semaines qui suivent leur application. En France, le décret 2011-321 impose un étiquetage obligatoire classant les produits de A+ (très faibles émissions) à C (émissions élevées). Choisir un produit classé A+ et aérer intensément pendant plusieurs semaines reste la démarche la plus efficace. Des alternatives naturelles (chaux, argile, silicate) offrent des teneurs en COV encore plus basses pour les pièces de vie."
+        title="Finitions murales : peintures, papiers peints, colles et apprêts à faibles émissions"
+        quickAnswer="Une finition murale ne se résume pas à la peinture finale. Les apprêts, colles de pose, papiers peints, toiles de verre et enduits décoratifs participent tous aux émissions de COV dans le logement, parfois davantage que la peinture elle-même. Le label A+ (décret 2011-321, obligatoire depuis 2013) s'applique à l'ensemble de ces produits. Cette page traite les finitions murales dans leur globalité : pour choisir une peinture en pot spécifiquement, voyez la page dédiée à la peinture saine."
         stats={[
           {
             value: "A+",
@@ -144,43 +144,43 @@ export default function PeinturesRevetementsPage() {
 
       <IssueCauses
         id="causes"
-        title="D'où viennent les COV dans les peintures et revêtements muraux."
-        subtitle="Les émissions varient selon la technologie du produit, ses composants et ses conditions d'application."
+        title="D'où viennent les COV dans une finition murale complète."
+        subtitle="Les émissions ne viennent pas que de la peinture : chaque produit posé sur le mur contribue, parfois pour une part significative."
         causes={[
           {
             number: "01",
-            cause: "Les solvants dans les peintures alkyde et glycéro",
+            cause: "Les apprêts, primers et sous-couches",
             explanation:
-              "Les peintures à base de solvants pétroliers (glycéro, alkyde) contiennent du white-spirit, du toluène ou du xylène. Ces solvants s'évaporent lors du séchage et pendant les semaines qui suivent. Leur teneur en COV peut atteindre 300 à 400 g/litre, soit plusieurs dizaines de fois plus que les peintures à l'eau.",
+              "La préparation du support est souvent négligée dans l'évaluation des émissions. Certains apprêts anti-humidité ou bouche-pores contiennent des solvants puissants (white-spirit, glycols) avec des teneurs en COV bien supérieures à la peinture finale. Un revêtement A+ posé sur un apprêt non étiqueté ne garantit pas un résultat global satisfaisant. Exigez un étiquetage A+ aussi sur la sous-couche.",
             frequency: "très fréquent",
           },
           {
             number: "02",
-            cause: "Les biocides et agents de conservation",
+            cause: "Les colles de pose des papiers peints et toiles de verre",
             explanation:
-              "Pour prévenir le développement de moisissures et prolonger la durée de vie en pot, les peintures conventionnelles contiennent des biocides (isothiazolinones, MIT, CMIT). Ces substances peuvent provoquer des réactions allergiques et sont également émises dans l'air après application.",
+              "La colle de pose est souvent le vecteur principal d'émissions d'un revêtement collé. Les colles en pâte prêtes à l'emploi (acryliques, polymères) émettent davantage que les colles en poudre à diluer (à base d'amidon ou de méthylcellulose). Vérifiez systématiquement l'étiquetage de la colle, pas seulement du papier peint lui-même.",
             frequency: "fréquent",
           },
           {
             number: "03",
-            cause: "Les liants synthétiques dans les peintures acryliques",
+            cause: "Les papiers peints et toiles de verre eux-mêmes",
             explanation:
-              "Même les peintures acryliques à l'eau, qui ont une teneur en COV bien inférieure aux glycéros, contiennent des résines synthétiques et des solvants de coalescence qui s'évaporent lors du séchage. Un produit A+ contient jusqu'à 5 g/litre de COV, contre 30 g/litre pour une peinture acrylique standard.",
-            frequency: "très fréquent",
-          },
-          {
-            number: "04",
-            cause: "Les apprêts, primers et sous-couches",
-            explanation:
-              "On oublie souvent que la préparation du support contribue également aux émissions. Certains apprêts anti-humidité ou adhérents contiennent des solvants puissants. Un revêtement de finition A+ posé sur un apprêt non étiqueté ne garantit pas un résultat global satisfaisant.",
+              "Un papier peint intissé moderne émet généralement peu de COV après séchage de la colle. Les papiers peints en vinyle sur support papier (anciens ou bas de gamme) peuvent en revanche dégager des phtalates et des stabilisants. Les toiles de verre destinées à être peintes ne sont émissives que si elles sont enduites d'un primaire pré-imprégné ; vérifiez l'étiquetage produit.",
             frequency: "fréquent",
           },
           {
-            number: "05",
-            cause: "Les papiers peints et colles de pose",
+            number: "04",
+            cause: "Les enduits décoratifs et bétons cirés",
             explanation:
-              "Un papier peint intissé peut lui-même être source de COV, mais la colle de pose est souvent le vecteur principal. Les colles en poudre à diluer sont généralement moins émissives que les colles en pâte prêtes à l'emploi. Vérifiez l'étiquetage de la colle comme du revêtement.",
+              "Les enduits décoratifs synthétiques (effet béton, stuc, tadelakt synthétique) contiennent des liants acryliques émissifs. Les enduits minéraux à base de chaux, de plâtre ou d'argile naturelle sont quasiment sans COV. Les bétons cirés véritables (à base de ciment et de cire végétale) sont plus sains que leurs équivalents acryliques.",
             frequency: "moins fréquent",
+          },
+          {
+            number: "05",
+            cause: "Les solvants et liants des peintures elles-mêmes",
+            explanation:
+              "Pour mémoire, les peintures glycéro et alkyde contiennent des solvants pétroliers (jusqu'à 300-400 g/L de COV). Les peintures acryliques à l'eau A+ restent sous 5 g/L. Le détail du choix de la peinture est traité sur la page dédiée — ici on retient simplement qu'elle reste un poste majeur dans le bilan global.",
+            frequency: "très fréquent",
           },
         ]}
       />
@@ -202,16 +202,16 @@ export default function PeinturesRevetementsPage() {
             effort: "Gratuit",
           },
           {
-            label: "Choisir une peinture à l'eau plutôt qu'une peinture à solvant",
+            label: "Vérifier l'étiquetage de l'apprêt avant d'acheter la peinture",
             description:
-              "Les peintures acryliques à l'eau ont une teneur en COV incomparablement plus faible que les glycéros ou alkydes. Pour les boiseries et plinthes, des peintures acryliques satinées A+ existent et remplacent avantageusement les anciennes glycéros.",
-            effort: "Choix au moment de l'achat",
+              "L'apprêt est souvent acheté sans réflexion, en complément de la peinture. Pourtant il peut être plus émissif que la finition. Exigez le A+ sur l'apprêt comme sur la peinture, surtout pour les apprêts anti-humidité, bouche-pores et accroches difficiles.",
+            effort: "Gratuit, vigilance à l'achat",
           },
           {
-            label: "Vérifier aussi l'étiquetage de l'apprêt et de la colle",
+            label: "Privilégier les colles à papier peint en poudre à diluer",
             description:
-              "Un revêtement A+ posé avec une colle non étiquetée ou un apprêt à solvants ne garantit pas un résultat satisfaisant. L'ensemble des produits de pose doit être pris en compte dans l'évaluation.",
-            effort: "Gratuit",
+              "Les colles à base de méthylcellulose ou d'amidon (en poudre, à diluer dans l'eau) émettent beaucoup moins que les colles en pâte prêtes à l'emploi. Pour les papiers peints intissés, ce type de colle convient parfaitement. Pour les vinyles, vérifiez la compatibilité technique.",
+            effort: "Choix au moment de l'achat",
           },
         ]}
         structural={[
@@ -274,14 +274,14 @@ export default function PeinturesRevetementsPage() {
         title="Vos questions sur les peintures et revêtements à faibles émissions"
         items={[
           {
-            question: "Comment lire l'étiquette d'une peinture pour évaluer ses émissions ?",
+            question: "Pourquoi vérifier l'étiquetage de la colle et de l'apprêt, pas seulement de la peinture ?",
             answer:
-              "L'étiquette obligatoire (décret 2011-321) affiche la classe d'émission de A+ à C sous forme de pictogramme ou de mention explicite. Vérifiez également la teneur en COV exprimée en g/litre, souvent indiquée dans la fiche technique ou sur l'emballage. Pour les peintures à l'eau, une teneur inférieure à 30 g/litre est la norme européenne pour la catégorie « faibles émissions ».",
+              "Parce qu'ils sont posés en couche significative et émettent autant voire davantage que la peinture finale. Une colle de papier peint en pâte ou un apprêt à solvants peut représenter la majeure partie des COV émis dans les semaines suivant un chantier. Le label A+ doit s'appliquer à l'ensemble des produits posés sur le mur, pas seulement à la finition visible.",
           },
           {
-            question: "Combien de temps faut-il aérer après une peinture A+ ?",
+            question: "Les papiers peints intissés sont-ils plus sains que les papiers peints vinyle ?",
             answer:
-              "Même avec une peinture classée A+, il est recommandé d'aérer intensément pendant au moins 4 à 6 semaines après l'application. Les émissions décroissent rapidement mais ne s'arrêtent pas à la fin du séchage visible. Dans une chambre d'enfant, prolongez la période d'aération et évitez de faire dormir l'enfant dans la pièce pendant au moins 2 semaines.",
+              "Généralement oui. Les intissés modernes émettent peu de COV une fois la colle sèche. Les papiers peints vinyle sur support papier, surtout les anciens ou bas de gamme, peuvent contenir des phtalates et des stabilisants émissifs. Pour une chambre, privilégiez l'intissé avec une colle en poudre à base d'amidon ou de méthylcellulose.",
           },
           {
             question: "Quelles sont les meilleures alternatives naturelles aux peintures conventionnelles ?",
@@ -301,24 +301,24 @@ export default function PeinturesRevetementsPage() {
         items={[
           {
             tag: "Matériaux sains",
-            title: "Matériaux à faibles émissions : le guide général",
+            title: "Choisir une peinture plus saine spécifiquement",
             description:
-              "Comprendre l'étiquetage A+ et faire de meilleurs choix sur l'ensemble des matériaux d'un logement, au-delà des seules peintures.",
+              "Pour le choix d'une peinture en pot : lecture étiquette, peintures à l'eau vs glycéro, alternatives naturelles (chaux, argile, silicate).",
+            href: "/materiaux-sains/peinture-plus-saine/",
+          },
+          {
+            tag: "Matériaux sains",
+            title: "Matériaux à faibles émissions : le hub transversal",
+            description:
+              "Le label A+ s'applique aussi aux sols, meubles et colles non murales. Comprendre l'étiquetage sur l'ensemble des matériaux d'un logement.",
             href: "/materiaux-sains/materiaux-faibles-emissions/",
           },
           {
             tag: "Matériaux sains",
             title: "Le dégazage des matériaux : comment ça fonctionne",
             description:
-              "Comprendre le phénomène physique du dégazage, sa durée selon les matériaux et les moyens de l'accélérer après des travaux.",
+              "Le phénomène physique du dégazage, sa durée selon les matériaux et les moyens de l'accélérer après travaux.",
             href: "/materiaux-sains/degazage-materiaux/",
-          },
-          {
-            tag: "Air intérieur",
-            title: "Les sources de pollution de l'air intérieur",
-            description:
-              "Les peintures s'inscrivent dans un tableau plus large de sources de polluants intérieurs. Comprendre l'ensemble pour agir dans le bon ordre.",
-            href: "/air-interieur/sources-pollution-air/",
           },
         ]}
       />

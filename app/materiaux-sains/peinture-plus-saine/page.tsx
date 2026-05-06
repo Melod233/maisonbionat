@@ -41,7 +41,7 @@ export default function ChoisirPeinturePage() {
         parentHref="/materiaux-sains/"
         tag="Aide au choix"
         title="Choisir une peinture moins émissive. Ce qu'il faut vraiment regarder."
-        quickAnswer="En France, l'étiquetage des émissions de COV est obligatoire sur toutes les peintures depuis 2013. Le label A+ est le minimum recommandé pour une pièce de vie ou une chambre. Mais le A+ ne signifie pas zéro émission : la ventilation post-application reste indispensable."
+        quickAnswer="En France, l'étiquetage des émissions de COV est obligatoire sur toutes les peintures depuis 2013. Le label A+ est le minimum recommandé pour une pièce de vie ou une chambre. Mais le A+ ne signifie pas zéro émission : la ventilation post-application reste indispensable. Cette page se concentre sur le choix d'une peinture en pot. Pour les autres finitions murales (papiers peints, colles, enduits décoratifs, apprêts), voyez la page dédiée aux revêtements muraux."
         stats={[
           { value: "A+", label: "label obligatoire en France depuis sept. 2013 (décret 2011-321)" },
           { value: "A–C", label: "quatre classes d'émissions, A+ étant la meilleure" },
@@ -293,17 +293,17 @@ export default function ChoisirPeinturePage() {
         items={[
           {
             tag: "Matériaux sains",
-            title: "Matériaux à faibles émissions",
+            title: "Peintures, revêtements et colles : étiquetage des finitions murales",
             description:
-              "La peinture n'est qu'un des matériaux à surveiller. Sols, meubles, colles : comprendre l'étiquetage sur l'ensemble des matériaux d'une rénovation.",
-            href: "/materiaux-sains/materiaux-faibles-emissions/",
+              "Au-delà de la peinture en pot : papiers peints, colles de pose, apprêts, enduits décoratifs. Comment évaluer l'ensemble des produits d'une finition murale.",
+            href: "/materiaux-sains/peintures-revetements-faibles-emissions/",
           },
           {
-            tag: "Rénovation saine",
-            title: "Rénover sans dégrader l'air",
+            tag: "Matériaux sains",
+            title: "Matériaux à faibles émissions : le hub transversal",
             description:
-              "Le choix des matériaux s'inscrit dans une stratégie globale. Ventilation, ordre des travaux et délais de dégazage.",
-            href: "/renovation-saine/",
+              "Le label A+ s'applique aussi aux sols, meubles et colles. Comprendre l'étiquetage sur l'ensemble des matériaux d'une rénovation.",
+            href: "/materiaux-sains/materiaux-faibles-emissions/",
           },
           {
             tag: "Maison saine famille",
