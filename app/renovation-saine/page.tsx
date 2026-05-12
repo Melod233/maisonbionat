@@ -228,6 +228,18 @@ export default function RenovationSainePage() {
             description: "Récupération 60-90 % de chaleur, filtration F7/ePM1 contre PM2,5 et pollens, 7 000-10 000 € posé en 2026. Pour quels logements et avec quelles aides MaPrimeRénov'.",
             href: "/renovation-saine/vmc-double-flux/",
           },
+          {
+            number: "10",
+            title: "MaPrimeRénov' et choix de matériaux sains",
+            description: "Aides 2026 (par geste, Parcours accompagné), cumul CEE et éco-PTZ, articulation avec les matériaux biosourcés. Démarche France Rénov' et arbitrages concrets.",
+            href: "/renovation-saine/maprimerenov-choix-sains/",
+          },
+          {
+            number: "11",
+            title: "Acheter une maison ancienne saine : checklist",
+            description: "DDT obligatoires (amiante, plomb, gaz, électricité, ERP, DPE), points sanitaires complémentaires, négociation et préparation d'un plan travaux post-achat.",
+            href: "/renovation-saine/acheter-maison-ancienne-saine/",
+          },
         ]}
       />
 

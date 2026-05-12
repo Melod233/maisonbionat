@@ -204,6 +204,18 @@ export default function MaisonSaineFamillePage() {
             description: "Acariens, moisissures, tabagisme passif, COV : les facteurs aggravants documentés (HAS 2023, SP2A) et les leviers d'éviction hiérarchisés en complément du traitement médical.",
             href: "/maison-saine-famille/asthme-enfant-maison/",
           },
+          {
+            number: "06",
+            title: "Matelas et literie sains : matériaux et certifications",
+            description: "Mousse, latex, ressorts, laine : comparatif et certifications fiables (OEKO-TEX, GOTS, CertiPUR, Eco-Institut) pour un matelas compatible avec une chambre saine.",
+            href: "/maison-saine-famille/matelas-literie-sains/",
+          },
+          {
+            number: "07",
+            title: "Déménagement et logement sain",
+            description: "Aérer avant emménagement, identifier la ventilation, gérer le dégazage : la checklist semaine par semaine pour bien démarrer dans un nouveau logement.",
+            href: "/maison-saine-famille/demenagement-logement-sain/",
+          },
         ]}
       />
 

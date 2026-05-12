@@ -201,6 +201,18 @@ export default function ChauffageSainPage() {
             description: "Audit énergétique, ordre des travaux (isolation d'abord), comparaison des modes selon climat et bâti, simulation des aides cumulées, retour sur investissement.",
             href: "/chauffage-sain/choisir-chauffage-renovation/",
           },
+          {
+            number: "05",
+            title: "Insert, cheminée ouverte ou poêle à bois : comparatif",
+            description: "Cheminée ouverte 10-15 %, insert 50-75 %, poêle Flamme Verte 7* 75-85 % : choix rendement et émissions de particules, cadre des aides 2026.",
+            href: "/chauffage-sain/insert-cheminee-vs-poele-bois/",
+          },
+          {
+            number: "06",
+            title: "Climatisation et qualité de l'air intérieur",
+            description: "Entretien des filtres, prévention du biofilm, écart thermique raisonnable, fluide frigorigène : utiliser la climatisation sans dégrader l'air du logement.",
+            href: "/chauffage-sain/climatisation-qualite-air/",
+          },
         ]}
       />
 

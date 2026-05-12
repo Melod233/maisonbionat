@@ -225,6 +225,18 @@ export default function EauMaisonPage() {
             description: "Santé, coût, environnement, traçabilité. Données ANSES et ADEME, affaire Nestlé Waters, microplastiques, et les cas où la bouteille reste justifiée.",
             href: "/eau-maison/eau-bouteille-vs-robinet/",
           },
+          {
+            number: "09",
+            title: "Légionelles et eau chaude sanitaire",
+            description: "Températures réglementaires (55 °C au point d'usage, 60 °C en stockage), prévention domestique, situations à risque accru. Repères HCSP et code de la santé publique.",
+            href: "/eau-maison/legionelles-eau-chaude-sanitaire/",
+          },
+          {
+            number: "10",
+            title: "Adoucisseur d'eau et santé",
+            description: "Échange d'ions, sodium ajouté, recommandations ANSES et HCSP : un robinet d'eau froide non adoucie en cuisine, entretien des résines, choix raisonné.",
+            href: "/eau-maison/adoucisseur-eau-sante/",
+          },
         ]}
       />
 

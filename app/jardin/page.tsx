@@ -114,12 +114,14 @@ export default function JardinPage() {
             action: "Construire un sol vivant : paillage, matière organique, sol couvert",
             description:
               "Couvrir le sol nu avec un paillage organique (feuilles mortes, BRF, paille, tontes séchées) sur 5 à 10 cm. Apporter du compost mûr en surface plutôt que de bêcher. Limiter le travail du sol au strict nécessaire. Effets : moins d'arrosage, moins de désherbage, plus de biodiversité.",
+            href: "/jardin/sol-vivant-paillage-matiere-organique/",
           },
           {
             number: "02",
             action: "Récupérer l'eau de pluie pour l'arrosage",
             description:
               "Une cuve de récupération adaptée à la surface de toiture et aux besoins du jardin réduit fortement la consommation d'eau potable pour l'arrosage. Usage extérieur : aucune démarche. Toiture saine (pas d'amiante ni de plomb) obligatoire.",
+            href: "/jardin/recuperation-eau-pluie-arrosage/",
           },
           {
             number: "03",
@@ -133,6 +135,7 @@ export default function JardinPage() {
             action: "Composter ses biodéchets de cuisine et de jardin",
             description:
               "Un composteur individuel adapté à la taille du foyer transforme épluchures, marc de café, tontes et feuilles en amendement gratuit pour le jardin. Méthode simple, gain immédiat sur les déchets et la fertilité.",
+            href: "/jardin/compostage-biodechets-jardin/",
           },
         ]}
       />
@@ -167,14 +170,63 @@ export default function JardinPage() {
       <ChildPageIndex
         id="explorer"
         title="Explorer le jardin sain en détail"
-        subtitle="Les pages enfants de ce silo s'enrichissent progressivement. Voici les sujets déjà couverts."
+        subtitle="Les pages enfants de ce silo couvrent les leviers concrets : sol, eau, déchets, équipements, sécurité du potager, entretien de la pelouse."
         pages={[
           {
             number: "01",
+            title: "Sol vivant : paillage, matière organique, sol couvert",
+            description:
+              "Paillage 5 à 10 cm, apports en surface, fin du bêchage systématique : la base qui réduit l'arrosage, le désherbage et installe une fertilité durable.",
+            href: "/jardin/sol-vivant-paillage-matiere-organique/",
+          },
+          {
+            number: "02",
+            title: "Récupérer l'eau de pluie pour l'arrosage",
+            description:
+              "Cuve aérienne ou enterrée, dimensionnement, règles selon l'usage extérieur ou intérieur (arrêté du 12 juillet 2024). Le guide pour bien installer.",
+            href: "/jardin/recuperation-eau-pluie-arrosage/",
+          },
+          {
+            number: "03",
             title: "Pesticides au jardin : alternatives concrètes depuis la loi Labbé",
             description:
               "Désherbage manuel, désherbeur thermique, paillage, plantes couvrantes : ce qui remplace réellement les produits chimiques interdits depuis 2022, et ce qui reste autorisé.",
             href: "/jardin/pesticides-jardin-alternatives/",
+          },
+          {
+            number: "04",
+            title: "Composter ses biodéchets au jardin",
+            description:
+              "Loi AGEC 2024, choix du composteur, équilibre matières vertes/brunes, suivi. Méthode simple pour transformer ses biodéchets en amendement gratuit.",
+            href: "/jardin/compostage-biodechets-jardin/",
+          },
+          {
+            number: "05",
+            title: "Mobilier de jardin durable : choisir un bois sain",
+            description:
+              "Essences naturellement durables, bois thermo-traité, autoclave : critères pour un mobilier sain, durable et bien adapté à l'usage.",
+            href: "/jardin/mobilier-jardin-bois-durable/",
+          },
+          {
+            number: "06",
+            title: "Analyse de sol avant potager : plomb et métaux lourds",
+            description:
+              "Quand faire analyser sa terre (zones urbaines, sites à risque), démarche, seuils sanitaires, alternatives en bac surélevé si contamination.",
+            href: "/jardin/analyse-sol-potager-metaux-lourds/",
+          },
+          {
+            number: "07",
+            title: "Pelouse saine et tonte raisonnée",
+            description:
+              "Hauteur 6 à 8 cm, fréquence ajustée, pelouse fleurie tolérée : la pelouse qui résiste mieux à la sécheresse et accueille les pollinisateurs.",
+            href: "/jardin/pelouse-saine-tonte-raisonnee/",
+          },
+          {
+            number: "08",
+            title: "Pollens et jardin allergique",
+            description:
+              "Bouleau, cyprès, graminées, ambroisie : espèces fortement allergisantes à éviter, alternatives entomophiles, calendrier RNSA.",
+            href: "/jardin/pollens-jardin-allergique/",
           },
         ]}
       />

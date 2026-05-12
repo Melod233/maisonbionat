@@ -150,6 +150,18 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: "monthly",
       priority: 0.7,
     },
+    {
+      url: `${BASE}/eau-maison/legionelles-eau-chaude-sanitaire/`,
+      lastModified: PAGES_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${BASE}/eau-maison/adoucisseur-eau-sante/`,
+      lastModified: PAGES_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
 
     // ── Air intérieur (17) ───────────────────────────────────
     {
@@ -414,6 +426,18 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: "monthly",
       priority: 0.7,
     },
+    {
+      url: `${BASE}/materiaux-sains/amiante-logement/`,
+      lastModified: PAGES_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${BASE}/materiaux-sains/plomb-peintures-anciennes-crep/`,
+      lastModified: PAGES_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
 
     // ── Produits et habitudes (11) ───────────────────────────
     {
@@ -478,6 +502,18 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     },
     {
       url: `${BASE}/produits-et-habitudes/diffuseur-huiles-essentielles/`,
+      lastModified: PAGES_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: `${BASE}/produits-et-habitudes/vaisselle-ustensiles-sains/`,
+      lastModified: PAGES_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: `${BASE}/produits-et-habitudes/plastiques-alimentaires-sains/`,
       lastModified: PAGES_UPDATED,
       changeFrequency: "monthly",
       priority: 0.7,
@@ -600,6 +636,18 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: "monthly",
       priority: 0.7,
     },
+    {
+      url: `${BASE}/renovation-saine/maprimerenov-choix-sains/`,
+      lastModified: PAGES_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: `${BASE}/renovation-saine/acheter-maison-ancienne-saine/`,
+      lastModified: PAGES_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
 
     // ── Maison saine famille (5) ─────────────────────────────
     {
@@ -628,6 +676,18 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     },
     {
       url: `${BASE}/maison-saine-famille/asthme-enfant-maison/`,
+      lastModified: PAGES_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: `${BASE}/maison-saine-famille/matelas-literie-sains/`,
+      lastModified: PAGES_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: `${BASE}/maison-saine-famille/demenagement-logement-sain/`,
       lastModified: PAGES_UPDATED,
       changeFrequency: "monthly",
       priority: 0.7,
@@ -664,6 +724,18 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: "monthly",
       priority: 0.7,
     },
+    {
+      url: `${BASE}/chauffage-sain/insert-cheminee-vs-poele-bois/`,
+      lastModified: PAGES_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: `${BASE}/chauffage-sain/climatisation-qualite-air/`,
+      lastModified: PAGES_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
 
     // ── Jardin ───────────────────────────────────────────────
     {
@@ -674,6 +746,48 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     },
     {
       url: `${BASE}/jardin/pesticides-jardin-alternatives/`,
+      lastModified: PAGES_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: `${BASE}/jardin/sol-vivant-paillage-matiere-organique/`,
+      lastModified: PAGES_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: `${BASE}/jardin/recuperation-eau-pluie-arrosage/`,
+      lastModified: PAGES_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: `${BASE}/jardin/compostage-biodechets-jardin/`,
+      lastModified: PAGES_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: `${BASE}/jardin/mobilier-jardin-bois-durable/`,
+      lastModified: PAGES_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.6,
+    },
+    {
+      url: `${BASE}/jardin/analyse-sol-potager-metaux-lourds/`,
+      lastModified: PAGES_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.6,
+    },
+    {
+      url: `${BASE}/jardin/pelouse-saine-tonte-raisonnee/`,
+      lastModified: PAGES_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.6,
+    },
+    {
+      url: `${BASE}/jardin/pollens-jardin-allergique/`,
       lastModified: PAGES_UPDATED,
       changeFrequency: "monthly",
       priority: 0.7,

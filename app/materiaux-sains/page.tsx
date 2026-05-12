@@ -258,6 +258,18 @@ export default function MateriauxSainsPage() {
             description: "Hub transversal : Écolabel européen, NF Environnement, A+, Greenguard, FSC, Ange Bleu, Oeko-Tex, Bâtiment biosourcé. Comment distinguer les labels fiables des mentions marketing.",
             href: "/materiaux-sains/labels-certifications/",
           },
+          {
+            number: "15",
+            title: "Amiante dans le logement : repérer, faire diagnostiquer",
+            description: "Cadre légal post-1997, matériaux concernés (fibrociment, dalles vinyle, flocages), repérages obligatoires (DAPP, RAT), recours aux professionnels certifiés sous-section 3 ou 4.",
+            href: "/materiaux-sains/amiante-logement/",
+          },
+          {
+            number: "16",
+            title: "Plomb dans les peintures anciennes : CREP et saturnisme",
+            description: "Peintures à la céruse avant 1949, CREP obligatoire à la vente et à la location, prévention du saturnisme infantile, précautions de travaux et démarche.",
+            href: "/materiaux-sains/plomb-peintures-anciennes-crep/",
+          },
         ]}
       />
 

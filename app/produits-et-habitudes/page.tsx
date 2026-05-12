@@ -240,6 +240,18 @@ export default function ProduitsEtHabitudesPage() {
             description: "Position ANSES (1 400+ cas centres antipoison entre 2011-2019), précautions enfants/femmes enceintes/asthmatiques, alternatives crédibles à la diffusion.",
             href: "/produits-et-habitudes/diffuseur-huiles-essentielles/",
           },
+          {
+            number: "12",
+            title: "Vaisselle et ustensiles sains : comparatif des matériaux",
+            description: "Téflon, inox, fonte, céramique : ce que chaque matériau apporte, ses limites, et comment les utiliser sainement au quotidien.",
+            href: "/produits-et-habitudes/vaisselle-ustensiles-sains/",
+          },
+          {
+            number: "13",
+            title: "Plastiques alimentaires : bisphénols, phtalates, codes",
+            description: "Tupperware, films, biberons : décoder les codes plastique (1 à 7), identifier les contenants à risque (BPA, phtalates), bonnes pratiques.",
+            href: "/produits-et-habitudes/plastiques-alimentaires-sains/",
+          },
         ]}
       />
 
