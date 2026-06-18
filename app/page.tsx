@@ -37,6 +37,12 @@ export default function HomePage() {
 
   return (
     <>
+      {/* Vérification temporaire de propriété du site (à retirer après validation) */}
+      <div
+        hidden
+        dangerouslySetInnerHTML={{ __html: "<!-- 19664273dd44b974 -->" }}
+      />
+
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(siteJsonLd) }}
