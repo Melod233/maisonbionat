@@ -101,6 +101,7 @@ export default function MentionsLegalesPage() {
                 Le site maisonbionat.fr est édité par Melod, entreprise
                 individuelle immatriculée sous le numéro SIRET 509&nbsp;708&nbsp;798&nbsp;00038.
               </p>
+              <p>Directeur de la publication : Philippe Jenft.</p>
               <p>
                 Contact :{" "}
                 <a href="mailto:contact@melod.fr">contact@melod.fr</a>
