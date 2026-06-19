@@ -15,10 +15,13 @@ const siloLinks = [
 ];
 
 // Liens secondaires actifs
-const secondaryLinks = [{ label: "Avis et lectures", href: "/avis/" }];
+const secondaryLinks = [
+  { label: "Avis et lectures", href: "/avis/" },
+  { label: "Mentions légales", href: "/mentions-legales/" },
+];
 
 // Pages à venir — affichées en texte non cliquable jusqu'à leur création
-const pendingLabels = ["À propos", "Contact", "Mentions légales"];
+const pendingLabels = ["À propos", "Contact"];
 
 
 function FooterLink({ href, children }: { href: string; children: React.ReactNode }) {

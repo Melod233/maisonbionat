@@ -57,6 +57,20 @@ export function getGuideIndexBreadcrumbs(): BreadcrumbItem[] {
 }
 
 /**
+ * Génère les breadcrumbs pour une page utilitaire de second niveau
+ * (mentions légales, etc.).
+ */
+export function getStaticPageBreadcrumbs(
+  name: string,
+  href: string
+): BreadcrumbItem[] {
+  return [
+    { name: "Accueil", href: "/" },
+    { name, href },
+  ];
+}
+
+/**
  * Génère les breadcrumbs pour une page guide /guides/[slug]/.
  */
 export function getGuideBreadcrumbs(
